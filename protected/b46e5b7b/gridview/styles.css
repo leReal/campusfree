@@ -1,0 +1,31 @@
+                   change the isolation level before returning the connection.
+
+  is-connection-validation-required   if true, connections are validated (checked to 
+                                      find out if they are usable) before giving out to 
+                                      the application. The default is false. 
+
+     If is-connection-validation-required is true then connection-validation-type 
+     specifies the type of validation to be performed. Three types of validation
+     are supported:
+
+        1) using connection.autoCommit(), 
+        2) using connection.getMetaData() 
+        3) performing a query on a user specified table (see validation-table-name). 
+
+     The possible values are one of:  auto-commit | meta-data | table 
+
+     validation-table-name specifies the table name to be used to perform a query to 
+     validate a connection. This parameter is mandatory, if connection-validation-type 
+     set to table. Verification by accessing a user specified table may become necessary
+     for connection validation, particularly if database driver caches calls to
+     setAutoCommit() and getMetaData(). 
+
+  fail-all-connections:              indicates if all connections in the pool must be 
+                                     closed should a single validation check fail. The 
+                                     default is false. One attempt will be made to 
+                                     re-establish failed connections.
+
+  Use of property lists:
+
+  Most JDBC 2.0 drivers permit use of standard property lists, to specify User, Password 
+  and other

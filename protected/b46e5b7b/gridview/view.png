@@ -1,0 +1,13 @@
+ealm: Specifies which realm (by name) is used by default when no 
+       realm is specifically requested. The file realm is the common default.
+   default-principal: Used as the identity of default security contexts when
+       necessary and no principal is provided.
+   default-principal-pwd: Password of default principal.
+   anonymous-role: Used as role name for default/anonymous role.
+   audit-enabled: If true, additional access logging is performed to provide
+     audit information.
+   jacc: Specifies the name of the jacc-provider element to use for setting
+     up the JACC infrastructure. The default value "default" does not need
+     to be changed unless adding a custom JACC provider.
+   audit-modules: Optional list of audit provider modules which will be used
+     by the audit subsystem

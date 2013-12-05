@@ -1,0 +1,28 @@
+d appear 
+                          in that directory. User can also specify an alternative 
+                          location using transaction-service.txlog-file attribute. 
+                          The transaction service creates and uses 3 files for 
+                          logging and tracking transactions in progress. 
+
+     heuristic-decision   During recovery, if outcome of a transaction cannot be 
+                          determined from the logs, then this property is used 
+                          to fix the outcome.
+
+    retry-timeout-in-seconds used to determine the retry time in the following 
+                             scenarios.  
+                             1. Time to wait at the transaction recovery time, 
+                                when resources are unreachable.
+                             2. If there are any transient exceptions in the 
+                                second phase of the 2 PC protocol.
+                             A negative value indicates infinite retry.  
+                             '0' indicates no retry.
+                             A positive value indicates the number of seconds for 
+                             which retry will be attempted. Default is 10 minutes 
+                             which may be appropriate for a database being restarted.
+
+     keypoint-interval    property used to specify the number of transactions between 
+                          keypoint operations on the log.  A Keypoint operations could 
+                          reduce the size of the transaction log files.  A larger value 
+                          for this property (for example, 1000) will result in larger 
+                          transaction log files, between log compactions, but less 
+                          keypoint operations, and potentially better performance.

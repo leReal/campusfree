@@ -1,0 +1,1966 @@
+2013/10/18 12:58:31 [error] [exception.CException] exception 'CException' with message 'Alias "application.information.models.TblInstitution" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\xampp\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.inf...', true)
+#1 D:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 D:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#5 D:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/campusfree/index.php/gii/crud
+HTTP_REFERER=http://localhost/campusfree/index.php/gii/crud
+---
+2013/10/18 13:00:28 [error] [exception.CException] exception 'CException' with message 'Alias "information.TblInstitution" is invalid. Make sure it points to an existing directory or file.' in D:\xampp\htdocs\yii\framework\YiiBase.php:341
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\gii\generators\crud\CrudCode.php(59): YiiBase::import('information.Tbl...', true)
+#1 D:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 D:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 D:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 D:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#5 D:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#12 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/campusfree/index.php/gii/crud
+HTTP_REFERER=http://localhost/campusfree/index.php/gii/crud
+---
+2013/10/18 13:02:49 [error] [php] include(TblEtablissement.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(74): model()
+#2 D:\xampp\htdocs\campusfree\protected\controllers\information\TblEtablissementController.php(125): CActiveDataProvider->__construct()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblEtablissementController->actionIndex()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblEtablissementController->runAction()
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblEtablissementController->filterAccessControl()
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblEtablissementController->runActionWithFilters()
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblEtablissementController->run()
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblEtablissement
+in D:\xampp\htdocs\campusfree\protected\controllers\information\TblEtablissementController.php (125)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/18 13:07:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/TblInstitution".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/Tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/TblInstitution
+---
+2013/10/18 13:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/TblInstitution".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/Tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/TblInstitution
+---
+2013/10/18 13:09:39 [error] [php] include(TblClasse.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(74): model()
+#2 D:\xampp\htdocs\campusfree\protected\controllers\information\TblClasseController.php(125): CActiveDataProvider->__construct()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/TblClasse
+in D:\xampp\htdocs\campusfree\protected\controllers\information\TblClasseController.php (125)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/18 13:13:23 [error] [php] include(TblClasse.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(74): model()
+#2 D:\xampp\htdocs\campusfree\protected\controllers\information\TblClasseController.php(125): CActiveDataProvider->__construct()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/TblClasse
+in D:\xampp\htdocs\campusfree\protected\controllers\information\TblClasseController.php (125)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/21 17:34:05 [error] [exception.CException] exception 'CException' with message 'Alias "modules.ModulesModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\xampp\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(196): YiiBase::import('modules.Modules...', true)
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(282): YiiBase::createComponent('modules.Modules...', 'modules', NULL, Array)
+#2 D:\xampp\htdocs\yii\framework\gii\generators\crud\CrudCode.php(121): CModule->getModule('modules')
+#3 D:\xampp\htdocs\yii\framework\gii\generators\crud\CrudCode.php(152): CrudCode->getModule()
+#4 D:\xampp\htdocs\yii\framework\base\CComponent.php(111): CrudCode->getControllerFile()
+#5 D:\xampp\htdocs\yii\framework\gii\generators\crud\CrudCode.php(86): CComponent->__get('controllerFile')
+#6 D:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(162): CrudCode->prepare()
+#7 D:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/gii/crud
+HTTP_REFERER=http://localhost/campusfree/index.php/gii/crud
+---
+2013/10/22 10:32:20 [error] [php] max(): Array must contain at least one element (D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php:47)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php(97): MbMenu->cssLastItems()
+#1 D:\xampp\htdocs\yii\framework\web\CBaseController.php(147): MbMenu->init()
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(172): TblUtilisateurController->createWidget()
+#3 D:\xampp\htdocs\campusfree\protected\views\layouts\main.php(60): TblUtilisateurController->widget()
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#5 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblUtilisateurController->renderInternal()
+#6 D:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): TblUtilisateurController->renderFile()
+#7 D:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 D:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 D:\xampp\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 D:\xampp\htdocs\yii\framework\web\CBaseController.php(300): TblUtilisateurController->endWidget()
+#11 D:\xampp\htdocs\campusfree\protected\views\layouts\column2.php(22): TblUtilisateurController->endContent()
+#12 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblUtilisateurController->renderInternal()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(784): TblUtilisateurController->renderFile()
+#15 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblUtilisateurController.php(79): TblUtilisateurController->render()
+#16 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblUtilisateurController->actionCreate()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblUtilisateurController->runAction()
+#19 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblUtilisateurController->filterAccessControl()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblUtilisateurController->runActionWithFilters()
+#25 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblUtilisateurController->run()
+#26 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblUtilisateur/create
+in D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php (47)
+in D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php (59)
+in D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php (97)
+2013/10/22 10:32:29 [error] [php] max(): Array must contain at least one element (D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php:47)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php(97): MbMenu->cssLastItems()
+#1 D:\xampp\htdocs\yii\framework\web\CBaseController.php(147): MbMenu->init()
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#3 D:\xampp\htdocs\campusfree\protected\views\layouts\main.php(60): SiteController->widget()
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#5 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 D:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#7 D:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#8 D:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#9 D:\xampp\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#10 D:\xampp\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#11 D:\xampp\htdocs\campusfree\protected\views\layouts\column1.php(6): SiteController->endContent()
+#12 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#15 D:\xampp\htdocs\campusfree\protected\controllers\SiteController.php(32): SiteController->render()
+#16 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#20 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/
+in D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php (47)
+in D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php (59)
+in D:\xampp\htdocs\campusfree\protected\extensions\mbmenu\MbMenu.php (97)
+2013/10/22 11:54:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_institution` (`nom`, `adresse`, `telephone1`, `telephone2`, `telephone3`, `boitepostale`, `ville`, `statut`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInstitutionController.php (73)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/22 11:54:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_institution` (`nom`, `adresse`, `telephone1`, `telephone2`, `telephone3`, `boitepostale`, `ville`, `statut`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInstitutionController.php(73): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInstitutionController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInstitution/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInstitution/create
+---
+2013/10/22 11:55:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_institution` (`nom`, `adresse`, `telephone1`, `telephone2`, `telephone3`, `boitepostale`, `ville`, `statut`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInstitutionController.php (73)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/22 11:55:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_institution` (`nom`, `adresse`, `telephone1`, `telephone2`, `telephone3`, `boitepostale`, `ville`, `statut`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInstitutionController.php(73): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInstitutionController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInstitution/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInstitution/create
+---
+2013/10/22 13:06:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/TblEtablissement".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/Tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/TblEtablissement
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblClasse/create
+---
+2013/10/22 13:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/TblEtablissement".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/Tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/TblEtablissement
+---
+2013/10/22 13:09:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/TblEtablissement".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/Tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/TblEtablissement
+---
+2013/10/23 17:15:56 [error] [php] include(tbl_filiere.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(215): model()
+#2 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#3 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct()
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(141): TblClasse->getRelated()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php(17): TblClasse->__get()
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#8 D:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): TblClasseController->renderFile()
+#9 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#12 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CListView->renderContent()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php(20): TblClasseController->widget()
+#15 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#16 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblClasseController->renderFile()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblClasseController->renderPartial()
+#19 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php(128): TblClasseController->render()
+#20 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#23 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#26 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#29 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#30 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblClasse/index
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php (17)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php (20)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php (128)
+2013/10/23 17:16:20 [error] [php] include(tbl_filiere.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(215): model()
+#2 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#3 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct()
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(141): TblClasse->getRelated()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php(17): TblClasse->__get()
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#8 D:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): TblClasseController->renderFile()
+#9 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#12 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CListView->renderContent()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php(20): TblClasseController->widget()
+#15 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#16 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblClasseController->renderFile()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblClasseController->renderPartial()
+#19 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php(128): TblClasseController->render()
+#20 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#23 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#26 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#29 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#30 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblClasse/index
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php (17)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php (20)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php (128)
+2013/10/23 17:16:50 [error] [php] include(tbl_filiere.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(215): model()
+#2 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#3 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct()
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(141): TblClasse->getRelated()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php(17): TblClasse->__get()
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#8 D:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): TblClasseController->renderFile()
+#9 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#12 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CListView->renderContent()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php(20): TblClasseController->widget()
+#15 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#16 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblClasseController->renderFile()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblClasseController->renderPartial()
+#19 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php(128): TblClasseController->render()
+#20 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#23 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#26 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#29 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#30 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/TblClasse
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php (17)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php (20)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php (128)
+2013/10/23 17:17:24 [error] [php] include(tbl_filiere.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(215): model()
+#2 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#3 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct()
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(141): TblClasse->getRelated()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php(17): TblClasse->__get()
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#8 D:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): TblClasseController->renderFile()
+#9 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#12 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CListView->renderContent()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php(20): TblClasseController->widget()
+#15 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#16 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblClasseController->renderFile()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblClasseController->renderPartial()
+#19 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php(128): TblClasseController->render()
+#20 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#23 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#26 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#29 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#30 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/TblClasse
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php (17)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php (20)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php (128)
+2013/10/23 17:17:28 [error] [php] include(tbl_filiere.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(215): model()
+#2 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#3 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct()
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(141): TblClasse->getRelated()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php(17): TblClasse->__get()
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#8 D:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): TblClasseController->renderFile()
+#9 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#12 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CListView->renderContent()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php(20): TblClasseController->widget()
+#15 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#16 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblClasseController->renderFile()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblClasseController->renderPartial()
+#19 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php(128): TblClasseController->render()
+#20 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#23 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#26 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#29 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#30 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/TblClasse
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php (17)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php (20)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php (128)
+2013/10/23 17:17:55 [error] [php] include(tbl_filiere.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(215): model()
+#2 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#3 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct()
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(141): TblClasse->getRelated()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php(17): TblClasse->__get()
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#8 D:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): TblClasseController->renderFile()
+#9 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#12 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CListView->renderContent()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php(20): TblClasseController->widget()
+#15 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#16 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblClasseController->renderFile()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblClasseController->renderPartial()
+#19 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php(128): TblClasseController->render()
+#20 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#23 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#26 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#29 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#30 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/TblClasse
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php (17)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php (20)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php (128)
+2013/10/23 17:19:10 [error] [php] include(tbl_filiere.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(215): model()
+#2 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#3 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct()
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(141): TblClasse->getRelated()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php(17): TblClasse->__get()
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#8 D:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): TblClasseController->renderFile()
+#9 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#12 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CListView->renderContent()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php(20): TblClasseController->widget()
+#15 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#16 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblClasseController->renderFile()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblClasseController->renderPartial()
+#19 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php(128): TblClasseController->render()
+#20 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#23 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#26 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#29 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#30 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblClasse/index
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php (17)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php (20)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php (128)
+2013/10/23 17:21:41 [error] [php] include(tbl_filiere.php): failed to open stream: No such file or directory (D:\xampp\htdocs\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(386): spl_autoload_call()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(215): model()
+#2 D:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#3 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(271): CActiveFinder->__construct()
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(141): TblClasse->getRelated()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php(17): TblClasse->__get()
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(130): require()
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#8 D:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(281): TblClasseController->renderFile()
+#9 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(160): CListView->renderItems()
+#10 unknown(0): CListView->renderSection()
+#11 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(143): preg_replace_callback()
+#12 D:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(128): CListView->renderContent()
+#13 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php(20): TblClasseController->widget()
+#15 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#16 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblClasseController->renderInternal()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblClasseController->renderFile()
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblClasseController->renderPartial()
+#19 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php(128): TblClasseController->render()
+#20 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblClasseController->actionIndex()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#22 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblClasseController->runAction()
+#23 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#25 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblClasseController->filterAccessControl()
+#26 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#27 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblClasseController->runActionWithFilters()
+#29 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblClasseController->run()
+#30 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#31 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#32 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/TblClasse
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\_view.php (17)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblClasse\index.php (20)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblClasseController.php (128)
+2013/10/23 18:02:12 [warning] [application] Failed to set unsafe attribute "datenaissance" of "TblAbonnement".
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblAbonnementController.php (72)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/23 18:02:12 [warning] [application] Failed to set unsafe attribute "photo" of "TblAbonnement".
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblAbonnementController.php (72)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/23 18:06:17 [warning] [application] Failed to set unsafe attribute "datenaissance" of "TblAbonnement".
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblAbonnementController.php (96)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/23 18:06:17 [warning] [application] Failed to set unsafe attribute "photo" of "TblAbonnement".
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblAbonnementController.php (96)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/24 10:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageAttachment".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageAttachment')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageAttachment')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/imageAttachment
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/admin
+---
+2013/10/24 10:31:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageAttachment".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageAttachment')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageAttachment')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/imageAttachment
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/admin
+---
+2013/10/24 10:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imageAttachment".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('imageAttachment')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('imageAttachment')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/imageAttachment
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/admin
+---
+2013/10/24 11:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "'.$model->getAttachment('thumb').'".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction(''.$model->getAt...')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run(''.$model->getAt...')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/%27.$model-%3EgetAttachment(%27thumb%27).%27
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/10/24 11:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "'.$model->attachment.'".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction(''.$model->attac...')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run(''.$model->attac...')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/%27.$model-%3Eattachment.%27
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/10/24 11:36:21 [warning] [application] Failed to set unsafe attribute "filename" of "TblInformation".
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (72)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/24 11:36:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titresms`, `contenusms`, `titremail`, `contenumail`, `id_informateur`, `etablissement_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (73)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/24 11:36:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titresms`, `contenusms`, `titremail`, `contenumail`, `id_informateur`, `etablissement_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(73): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/10/24 11:37:07 [warning] [application] Failed to set unsafe attribute "filename" of "TblInformation".
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (72)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/24 11:37:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titresms`, `contenusms`, `titremail`, `contenumail`, `id_informateur`, `etablissement_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (73)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/24 11:37:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titresms`, `contenusms`, `titremail`, `contenumail`, `id_informateur`, `etablissement_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(73): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/10/24 11:37:42 [warning] [application] Failed to set unsafe attribute "filename" of "TblInformation".
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (72)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/24 11:37:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titresms`, `contenusms`, `titremail`, `contenumail`, `id_informateur`, `etablissement_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (73)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/24 11:37:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titresms`, `contenusms`, `titremail`, `contenumail`, `id_informateur`, `etablissement_id`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(73): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/10/24 12:29:46 [error] [exception.CException] exception 'CException' with message 'Alias "applications.modules.information.models.TblUtilisateur" is invalid. Make sure it points to an existing directory or file.' in D:\xampp\htdocs\yii\framework\YiiBase.php:341
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\gii\generators\form\FormCode.php(58): YiiBase::import('applications.mo...', true)
+#1 D:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(42): FormCode->validateModel('model', Array)
+#2 D:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(FormCode), 'model')
+#3 D:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(FormCode), NULL)
+#4 D:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#5 D:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/form')
+#12 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/campusfree/index.php/gii/form
+HTTP_REFERER=http://localhost/campusfree/index.php/gii/form
+---
+2013/10/24 13:37:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_utilisateur`, CONSTRAINT `tbl_utilisateur_ibfk_1` FOREIGN KEY (`type`) REFERENCES `tbl_type_utlisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_utilisateur` (`login`, `motdepasse`, `nom`, `prenom`, `adresseemail1`, `telephone1`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformateurController.php (73)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/10/24 13:37:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_utilisateur`, CONSTRAINT `tbl_utilisateur_ibfk_1` FOREIGN KEY (`type`) REFERENCES `tbl_type_utlisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_utilisateur` (`login`, `motdepasse`, `nom`, `prenom`, `adresseemail1`, `telephone1`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformateurController.php(73): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformateurController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformateur/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformateur/create
+---
+2013/10/25 12:04:56 [error] [php] Undefined variable: data (D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\_form.php:51)
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblInformationController->renderFile()
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\create.php(18): TblInformationController->renderPartial()
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#3 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): TblInformationController->renderInternal()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(869): TblInformationController->renderFile()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(782): TblInformationController->renderPartial()
+#6 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(79): TblInformationController->render()
+#7 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#10 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#13 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#16 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#17 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#19 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\_form.php (51)
+in D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\create.php (18)
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (79)
+2013/11/05 10:43:10 [error] [php] fsockopen(): unable to connect to ssl://smtp.gmail.com:465 (Unable to find the socket transport &quot;ssl&quot; - did you forget to enable it when you configured PHP?) (D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:233)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(101): Swift_Transport_StreamBuffer->initialize()
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#3 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(84): YiiMail->send()
+#4 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#7 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#10 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#14 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (233)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (70)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php (101)
+2013/11/05 10:45:06 [error] [php] fsockopen(): unable to connect to ssl://smtp.mail.yahoo.com:465 (Unable to find the socket transport &quot;ssl&quot; - did you forget to enable it when you configured PHP?) (D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:233)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(101): Swift_Transport_StreamBuffer->initialize()
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#3 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(84): YiiMail->send()
+#4 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#7 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#10 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#14 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (233)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (70)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php (101)
+2013/11/05 10:45:43 [error] [php] fsockopen(): unable to connect to ssl://smtp.gmail.com:465 (Unable to find the socket transport &quot;ssl&quot; - did you forget to enable it when you configured PHP?) (D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:233)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(101): Swift_Transport_StreamBuffer->initialize()
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#3 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(84): YiiMail->send()
+#4 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#7 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#10 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#14 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (233)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (70)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php (101)
+2013/11/05 10:48:48 [error] [php] fsockopen(): unable to connect to ssl://smtp.gmail.com:465 (Unable to find the socket transport &quot;ssl&quot; - did you forget to enable it when you configured PHP?) (D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:233)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(101): Swift_Transport_StreamBuffer->initialize()
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(74): Swift_SmtpTransport->start()
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#3 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(84): YiiMail->send()
+#4 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#7 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#9 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#10 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#14 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (233)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (70)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php (101)
+2013/11/05 10:50:55 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.attachments" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('attachments')
+#1 D:\xampp\htdocs\yii\framework\validators\CFileValidator.php(165): CActiveRecord->__get('attachments')
+#2 D:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CFileValidator->validateAttribute(Object(TblInformation), 'attachments')
+#3 D:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(TblInformation), NULL)
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(794): CModel->validate(NULL)
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(73): CActiveRecord->save()
+#6 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#17 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 10:52:14 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.attachments" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('attachments')
+#1 D:\xampp\htdocs\yii\framework\validators\CFileValidator.php(165): CActiveRecord->__get('attachments')
+#2 D:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CFileValidator->validateAttribute(Object(TblInformation), 'attachments')
+#3 D:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(TblInformation), NULL)
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(794): CModel->validate(NULL)
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(73): CActiveRecord->save()
+#6 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#17 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 10:53:01 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.attachments" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('attachments')
+#1 D:\xampp\htdocs\yii\framework\validators\CFileValidator.php(165): CActiveRecord->__get('attachments')
+#2 D:\xampp\htdocs\yii\framework\validators\CValidator.php(213): CFileValidator->validateAttribute(Object(TblInformation), 'attachments')
+#3 D:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(TblInformation), NULL)
+#4 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(794): CModel->validate(NULL)
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(73): CActiveRecord->save()
+#6 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#16 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#17 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 10:55:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titremail`, `contenumail`, `etablissement_id`) VALUES (:yp0, :yp1, :yp2).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (73)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/11/05 10:55:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titremail`, `contenumail`, `etablissement_id`) VALUES (:yp0, :yp1, :yp2)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(73): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 11:21:14 [error] [exception.Swift_RfcComplianceException] exception 'Swift_RfcComplianceException' with message 'Address in mailbox given [rm.gokeng@payway.cm,rostowgokeng@gmail.com] does not comply with RFC 2822, 3.6.2.' in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php:309
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(239): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('rm.gokeng@paywa...')
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(97): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(61): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleHeaderFactory.php(64): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleHeaderSet.php(77): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', Array)
+#5 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(301): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', Array)
+#6 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(278): Swift_Mime_SimpleMessage->setTo(Array)
+#7 [internal function]: Swift_Mime_SimpleMessage->addTo('rm.gokeng@paywa...')
+#8 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMailMessage.php(94): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(77): YiiMailMessage->__call('addTo', Array)
+#10 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(77): YiiMailMessage->addTo('rm.gokeng@paywa...')
+#11 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#22 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 11:21:50 [error] [exception.Swift_RfcComplianceException] exception 'Swift_RfcComplianceException' with message 'Address in mailbox given [rm.gokeng@payway.cm; rostowgokeng@gmail.com] does not comply with RFC 2822, 3.6.2.' in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php:309
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(239): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('rm.gokeng@paywa...')
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(97): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(61): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleHeaderFactory.php(64): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleHeaderSet.php(77): Swift_Mime_SimpleHeaderFactory->createMailboxHeader('To', Array)
+#5 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(301): Swift_Mime_SimpleHeaderSet->addMailboxHeader('To', Array)
+#6 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(278): Swift_Mime_SimpleMessage->setTo(Array)
+#7 [internal function]: Swift_Mime_SimpleMessage->addTo('rm.gokeng@paywa...')
+#8 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMailMessage.php(94): call_user_func_array(Array, Array)
+#9 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(77): YiiMailMessage->__call('addTo', Array)
+#10 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(77): YiiMailMessage->addTo('rm.gokeng@paywa...')
+#11 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#22 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:14:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/campusfree/index.php/site/upload?PHPSESSID=h62lal3almoqb12ehp5a1csrh4&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=IMG_02092013_194039.png
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:15:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/campusfree/index.php/site/upload?PHPSESSID=h62lal3almoqb12ehp5a1csrh4&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=Gestionnaire+de+taches_20131016102746.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:16:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/upload')
+#3 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/campusfree/index.php/site/upload?PHPSESSID=h62lal3almoqb12ehp5a1csrh4&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=Gestionnaire+de+taches_20131016102746.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:18:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=h62lal3almoqb12ehp5a1csrh4&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=Gestionnaire+de+taches_20131016102746.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:26:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=h62lal3almoqb12ehp5a1csrh4&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=cahier-des-charges-Site+Internet+PROJET+ONLIN_RMQ_TKP.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:26:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=h62lal3almoqb12ehp5a1csrh4&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=contrat.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:32:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=cahier-des-charges-Site+Internet+PROJET+ONLIN_RMQ_TKP.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:35:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=cahier-des-charges-Site+Internet+PROJET+ONLIN_RMQ_TKP.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 12:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=IMG_02092013_194039.png
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 14:50:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=cahier+des+sp%C3%A9cifications+v3.doc
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 15:23:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=cahier-des-charges-Site+Internet+PROJET+ONLIN_RMQ_TKP.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 15:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=contrat.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 15:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "campusfree/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('campusfree/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/campusfree/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=cahier-des-charges-Site+Internet+PROJET+ONLIN.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 15:35:18 [error] [exception.CException] exception 'CException' with message 'EAjaxUpload: param "action" cannot be empty.' in D:\xampp\htdocs\campusfree\protected\extensions\EAjaxUpload\EAjaxUpload.php:62
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): EAjaxUpload->run()
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\_form.php(54): CBaseController->widget('ext.EAjaxUpload...', Array)
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#3 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\create.php(18): CController->renderPartial('_form', Array)
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(89): CController->render('create', Array)
+#11 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#22 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/TblInformation
+---
+2013/11/05 15:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "controller/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('controller/uplo...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/controller/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=cahier-des-charges-Site+Internet+PROJET+ONLIN.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 15:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblInformationController/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblInformationC...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/TblInformationController/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=Gestionnaire+de+taches_20131016102746.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 15:42:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=contrat.docx
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 15:42:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=cahier+des+sp%C3%A9cifications_280813.doc
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/05 15:43:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#8 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#9 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/upload?PHPSESSID=nuj89ke7cc6vh5snsj6vucs4j0&YII_CSRF_TOKEN=ddb21561704bdbc4c60995d91cc7e1eebff79ae0&qqfile=Gestionnaire+de+taches_20131016102746.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/08 15:27:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblInformationController/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblInformationC...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/TblInformationController/upload?PHPSESSID=2m91i4cb19i0ucoicj8k77kdp2&YII_CSRF_TOKEN=8edea61d1d98622840c165317625bc76fc5b7833&qqfile=Livre+Blanc+GPRS+V2.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/08 15:28:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblInformationController/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblInformationC...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/TblInformationController/upload?PHPSESSID=2m91i4cb19i0ucoicj8k77kdp2&YII_CSRF_TOKEN=8edea61d1d98622840c165317625bc76fc5b7833&qqfile=Livre+Blanc+GPRS+V2.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/08 15:29:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblInformationController/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblInformationC...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/TblInformationController/upload?PHPSESSID=2m91i4cb19i0ucoicj8k77kdp2&YII_CSRF_TOKEN=8edea61d1d98622840c165317625bc76fc5b7833&qqfile=java-systemes-embarques.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/08 15:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblInformation/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblInformation/...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/TblInformation/upload?PHPSESSID=2m91i4cb19i0ucoicj8k77kdp2&YII_CSRF_TOKEN=8edea61d1d98622840c165317625bc76fc5b7833&qqfile=Livre+Blanc+GPRS+V2.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/08 16:01:41 [error] [exception.CException] exception 'CException' with message 'Alias "ext.EFineUploader.EFineUploader" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\xampp\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.EFineUpload...', true)
+#1 D:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(TblInformationController), 'ext.EFineUpload...', Array)
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.EFineUpload...', Array)
+#3 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\_form.php(56): CBaseController->widget('ext.EFineUpload...', Array)
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#5 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#7 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\create.php(18): CController->renderPartial('_form', Array)
+#8 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#9 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(89): CController->render('create', Array)
+#13 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#24 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/admin
+---
+2013/11/08 16:04:03 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.EFineUploader.EFineUploader" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\xampp\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 D:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(TblInformationController), 'application.ext...', Array)
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\_form.php(56): CBaseController->widget('application.ext...', Array)
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#5 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#7 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\create.php(18): CController->renderPartial('_form', Array)
+#8 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#9 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(89): CController->render('create', Array)
+#13 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#24 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/admin
+---
+2013/11/09 13:51:49 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.EFineUploader.EFineUploader" is invalid. Make sure it points to an existing PHP file and the file is readable.' in D:\xampp\htdocs\yii\framework\YiiBase.php:316
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 D:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(TblInformationController), 'application.ext...', Array)
+#2 D:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\_form.php(56): CBaseController->widget('application.ext...', Array)
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#5 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#7 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformation\create.php(18): CController->renderPartial('_form', Array)
+#8 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#9 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(89): CController->render('create', Array)
+#13 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#14 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#24 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/TblInformation
+---
+2013/11/23 14:32:58 [error] [exception.CException] exception 'CException' with message 'Property "TblUtilisateur.color" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('color')
+#1 D:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('color')
+#2 D:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1565): CHtml::resolveValue(Object(TblUtilisateur), 'color')
+#3 D:\xampp\htdocs\campusfree\protected\extensions\EchMultiSelect\EchMultiSelect.php(103): CHtml::activeDropDownList(Object(TblUtilisateur), 'color', Array, Array)
+#4 D:\xampp\htdocs\yii\framework\web\CBaseController.php(173): EchMultiselect->run()
+#5 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformateur\_form.php(64): CBaseController->widget('ext.EchMultisel...', Array)
+#6 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#7 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#8 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#9 D:\xampp\htdocs\campusfree\protected\modules\information\views\tblInformateur\create.php(18): CController->renderPartial('_form', Array)
+#10 D:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('D:\xampp\htdocs...')
+#11 D:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\xampp\htdocs...', Array, true)
+#12 D:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\xampp\htdocs...', Array, true)
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformateurController.php(81): CController->render('create', Array)
+#15 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformateurController->actionCreate()
+#16 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#26 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformateur/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformateur/index
+---
+2013/11/25 14:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/tblInformation/create".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/TblInformation
+---
+2013/11/25 14:03:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/tblInformation/create".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/TblInformation
+---
+2013/11/25 14:03:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/TblInformation".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/Tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/TblInformation
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 14:03:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "information/TblInformation".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/Tbl...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/information/TblInformation
+HTTP_REFERER=http://localhost/campusfree/index.php/information/TblAbonnement
+---
+2013/11/25 14:16:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('message/upload')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/message/upload?PHPSESSID=1nk26bae4dj6fe77dtmgd8b6c1&YII_CSRF_TOKEN=120297b2ffd2283be2342d17cb582df4600b9a77&qqfile=rapport-atacora.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 14:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('message/upload')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/message/upload?PHPSESSID=1nk26bae4dj6fe77dtmgd8b6c1&YII_CSRF_TOKEN=120297b2ffd2283be2342d17cb582df4600b9a77&qqfile=rapport.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 14:18:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('message/upload')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/message/upload?PHPSESSID=1nk26bae4dj6fe77dtmgd8b6c1&YII_CSRF_TOKEN=120297b2ffd2283be2342d17cb582df4600b9a77&qqfile=rapport.pdf
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:22:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/upload".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('message/upload')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/message/upload?PHPSESSID=t3utr40uklcnsveq6l8lvgh4g2&YII_CSRF_TOKEN=120297b2ffd2283be2342d17cb582df4600b9a77&qqfile=ADSNET_TICKETING+SUR+TPE+INGENICO_DRAFT+PROJET.doc
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:24:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/resetUploadFile".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('message/resetUp...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/message/resetUploadFile
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:26:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/resetUploadFile".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('message/resetUp...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/message/resetUploadFile
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/resetUploadFile".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('message/resetUp...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/message/resetUploadFile
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "message/resetUploadFile".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('message/resetUp...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/message/resetUploadFile
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:26:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblInformation/resetUploadFile".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblInformation/...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/TblInformation/resetUploadFile
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:27:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblInformation/resetUploadFile".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblInformation/...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/TblInformation/resetUploadFile
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:27:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "TblInformation/resetUploadFile".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('TblInformation/...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/TblInformation/resetUploadFile
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 18:28:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tblInformation/resetUploadFile".' in D:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tblInformation/...')
+#1 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/campusfree/index.php/tblInformation/resetUploadFile
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 19:34:07 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.sujet" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sujet')
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(125): CActiveRecord->__get('sujet')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/25 19:48:07 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.sujet" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sujet')
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(125): CActiveRecord->__get('sujet')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/26 10:08:07 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.sujet" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sujet')
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(125): CActiveRecord->__get('sujet')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/26 12:36:11 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.sujet" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sujet')
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(125): CActiveRecord->__get('sujet')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/26 12:37:04 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.sujet" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sujet')
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(125): CActiveRecord->__get('sujet')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/26 12:38:30 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.sujet" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sujet')
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(125): CActiveRecord->__get('sujet')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/26 12:40:09 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.sujet" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sujet')
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(125): CActiveRecord->__get('sujet')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/26 12:40:23 [error] [exception.CException] exception 'CException' with message 'Property "TblInformation.sujet" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('sujet')
+#1 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(125): CActiveRecord->__get('sujet')
+#2 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#3 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#13 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/11/26 13:12:13 [error] [php] fwrite():  (D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:209)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php(84): Swift_Transport_StreamBuffer->_doWrite()
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\ContentEncoder\Base64ContentEncoder.php(67): Swift_Transport_StreamBuffer->write()
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(516): Swift_Mime_ContentEncoder_Base64ContentEncoder->encodeByteStream()
+#3 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(538): Swift_Attachment->toByteStream()
+#4 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(561): Swift_Message->toByteStream()
+#5 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(338): Swift_Message->toByteStream()
+#6 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(458): Swift_SmtpTransport->_streamMessage()
+#7 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(477): Swift_SmtpTransport->_doMailTransaction()
+#8 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(168): Swift_SmtpTransport->_sendTo()
+#9 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(77): Swift_SmtpTransport->send()
+#10 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#11 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(147): YiiMail->send()
+#12 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#18 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (209)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (168)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (84)
+2013/11/26 13:22:07 [error] [php] fwrite():  (D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:209)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php(84): Swift_Transport_StreamBuffer->_doWrite()
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\ContentEncoder\Base64ContentEncoder.php(67): Swift_Transport_StreamBuffer->write()
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(516): Swift_Mime_ContentEncoder_Base64ContentEncoder->encodeByteStream()
+#3 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(538): Swift_Attachment->toByteStream()
+#4 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(561): Swift_Message->toByteStream()
+#5 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(338): Swift_Message->toByteStream()
+#6 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(458): Swift_SmtpTransport->_streamMessage()
+#7 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(477): Swift_SmtpTransport->_doMailTransaction()
+#8 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(168): Swift_SmtpTransport->_sendTo()
+#9 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(77): Swift_SmtpTransport->send()
+#10 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#11 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(148): YiiMail->send()
+#12 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#18 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (209)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (168)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (84)
+2013/11/26 13:23:16 [error] [php] fwrite():  (D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:209)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php(84): Swift_Transport_StreamBuffer->_doWrite()
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\ContentEncoder\Base64ContentEncoder.php(67): Swift_Transport_StreamBuffer->write()
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(516): Swift_Mime_ContentEncoder_Base64ContentEncoder->encodeByteStream()
+#3 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(538): Swift_Attachment->toByteStream()
+#4 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(561): Swift_Message->toByteStream()
+#5 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(338): Swift_Message->toByteStream()
+#6 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(458): Swift_SmtpTransport->_streamMessage()
+#7 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(477): Swift_SmtpTransport->_doMailTransaction()
+#8 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(168): Swift_SmtpTransport->_sendTo()
+#9 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(77): Swift_SmtpTransport->send()
+#10 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#11 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(148): YiiMail->send()
+#12 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#18 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (209)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (168)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (84)
+2013/11/26 13:25:22 [error] [php] fwrite():  (D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php:209)
+Stack trace:
+#0 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php(84): Swift_Transport_StreamBuffer->_doWrite()
+#1 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\ContentEncoder\Base64ContentEncoder.php(67): Swift_Transport_StreamBuffer->write()
+#2 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(516): Swift_Mime_ContentEncoder_Base64ContentEncoder->encodeByteStream()
+#3 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(538): Swift_Attachment->toByteStream()
+#4 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(561): Swift_Message->toByteStream()
+#5 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(338): Swift_Message->toByteStream()
+#6 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(458): Swift_SmtpTransport->_streamMessage()
+#7 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(477): Swift_SmtpTransport->_doMailTransaction()
+#8 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\AbstractSmtpTransport.php(168): Swift_SmtpTransport->_sendTo()
+#9 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mailer.php(77): Swift_SmtpTransport->send()
+#10 D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\YiiMail.php(133): Swift_Mailer->send()
+#11 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(148): YiiMail->send()
+#12 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#13 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): TblInformationController->runAction()
+#15 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): TblInformationController->filterAccessControl()
+#18 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 D:\xampp\htdocs\yii\framework\web\CController.php(265): TblInformationController->runActionWithFilters()
+#21 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): TblInformationController->run()
+#22 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 D:\xampp\htdocs\campusfree\index.php(13): CWebApplication->run()
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Transport\StreamBuffer.php (209)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (168)
+in D:\xampp\htdocs\campusfree\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\ByteStream\AbstractFilterableInputStream.php (84)
+2013/12/04 16:02:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titremail`, `contenumail`) VALUES (:yp0, :yp1).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (151)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/12/04 16:02:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titremail`, `contenumail`) VALUES (:yp0, :yp1)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(151): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/12/04 16:03:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titremail`, `contenumail`) VALUES (:yp0, :yp1).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (151)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/12/04 16:03:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titremail`, `contenumail`) VALUES (:yp0, :yp1)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(151): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
+2013/12/04 16:05:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titremail`, `contenumail`, `id_informateur`) VALUES (:yp0, :yp1, :yp2).
+in D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php (151)
+in D:\xampp\htdocs\campusfree\index.php (13)
+2013/12/04 16:05:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campusfree`.`tbl_information`, CONSTRAINT `tbl_information_ibfk_1` FOREIGN KEY (`id_informateur`) REFERENCES `tbl_utilisateur` (`id`)). The SQL statement executed was: INSERT INTO `tbl_information` (`titremail`, `contenumail`, `id_informateur`) VALUES (:yp0, :yp1, :yp2)' in D:\xampp\htdocs\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 D:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 D:\xampp\htdocs\campusfree\protected\modules\information\controllers\TblInformationController.php(151): CActiveRecord->save()
+#3 D:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): TblInformationController->actionCreate()
+#4 D:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('information/tbl...')
+#14 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\xampp\htdocs\campusfree\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/campusfree/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
+---
