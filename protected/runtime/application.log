@@ -1964,3 +1964,95 @@ Stack trace:
 REQUEST_URI=/campusfree/index.php/information/tblInformation/create
 HTTP_REFERER=http://localhost/campusfree/index.php/information/tblInformation/create
 ---
+2013/12/05 17:55:50 [error] [exception.CException] exception 'CException' with message 'Property "RDbAuthManager.urlFormat" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path')
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\campusfree\trunk\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/campusfree/trunk/index.php/rights
+---
+2013/12/05 17:56:17 [error] [exception.CException] exception 'CException' with message 'Property "RDbAuthManager.urlFormat" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path')
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\campusfree\trunk\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/campusfree/trunk/index.php/site/login
+HTTP_REFERER=http://localhost/campusfree/trunk/index.php
+---
+2013/12/05 17:56:29 [error] [exception.CException] exception 'CException' with message 'Property "RDbAuthManager.urlFormat" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path')
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\campusfree\trunk\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/campusfree/trunk/index.php?r=rights
+---
+2013/12/05 18:05:04 [error] [exception.CException] exception 'CException' with message 'Property "RDbAuthManager.urlFormat" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path')
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\campusfree\trunk\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/campusfree/trunk/index.php
+---
+2013/12/05 18:05:16 [error] [exception.CException] exception 'CException' with message 'Property "RDbAuthManager.urlFormat" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path')
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\campusfree\trunk\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/campusfree/trunk/index.php/information/tblInformation/view/id/11
+HTTP_REFERER=http://localhost/campusfree/trunk/index.php/information/tblInformation/create
+---
+2013/12/05 18:05:18 [error] [exception.CException] exception 'CException' with message 'Property "RDbAuthManager.urlFormat" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path')
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\campusfree\trunk\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/campusfree/trunk/index.php/information/tblInformation/create
+HTTP_REFERER=http://localhost/campusfree/trunk/index.php/information/TblInformation
+---
+2013/12/05 18:05:19 [error] [exception.CException] exception 'CException' with message 'Property "RDbAuthManager.urlFormat" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path')
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\campusfree\trunk\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/campusfree/trunk/index.php/information/TblInformation
+HTTP_REFERER=http://localhost/campusfree/trunk/index.php
+---
+2013/12/05 18:05:35 [error] [exception.CException] exception 'CException' with message 'Property "RDbAuthManager.urlFormat" is not defined.' in D:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('urlFormat', 'path')
+#1 D:\xampp\htdocs\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\xampp\htdocs\yii\framework\base\CApplication.php(510): CModule->getComponent('urlManager')
+#3 D:\xampp\htdocs\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#4 D:\xampp\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\xampp\htdocs\campusfree\trunk\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/campusfree/trunk/
+---
