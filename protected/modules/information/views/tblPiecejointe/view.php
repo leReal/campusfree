@@ -26,5 +26,8 @@ $this->menu=array(
 		'contenu',
 		'filename',
 		'filetype',
+           
 	),
-)); ?>
+));
+echo '<a href="'.Yii::app()->getBaseUrl().'/uploads/'.$model->getAttribute("filename").'"> Télécharger</a>';
+?>

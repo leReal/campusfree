@@ -26,4 +26,27 @@ $this->menu=array(
 		'contenumail',
 		'id_informateur',
 	),
-)); ?>
+));
+?>
+
+<?php
+echo '<br><h2>Pièces jointes</h2>';
+$this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'tbl-piecejointe-grid',
+	'dataProvider'=>$model2->search(),
+	'filter'=>$model2,
+	'columns'=>array(
+		'id',
+		'information_id',
+		'contenu',
+		'filename',
+		'filetype',
+	 array(
+                    'header'=>'Cliquez pour télécharger',
+                    'labelExpression'=>'$data->filename',
+                    'urlExpression'=>'array("downloadPiece","id"=>$data->id)',
+                    'class'=>'CLinkColumn'
+                ),
+	),
+));
+?>

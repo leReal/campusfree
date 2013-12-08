@@ -40,7 +40,7 @@ class TblPiecejointe extends CActiveRecord
 		return array(
 			array('information_id, contenu, filename, filetype', 'required'),
 			array('information_id', 'numerical', 'integerOnly'=>true),
-			array('filename', 'length', 'max'=>100),
+//			array('filename', 'length', 'max'=>100),
 			array('filetype', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -68,8 +68,9 @@ class TblPiecejointe extends CActiveRecord
 			'id' => 'ID',
 			'information_id' => 'Information',
 			'contenu' => 'Contenu',
-			'filename' => 'Filename',
-			'filetype' => 'Filetype',
+			'filename' => 'Nom du fichier',
+			'filetype' => 'Type du fichier',
+                        
 		);
 	}
 
@@ -89,6 +90,7 @@ class TblPiecejointe extends CActiveRecord
 		$criteria->compare('contenu',$this->contenu,true);
 		$criteria->compare('filename',$this->filename,true);
 		$criteria->compare('filetype',$this->filetype,true);
+                
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
