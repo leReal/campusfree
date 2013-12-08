@@ -170,4 +170,13 @@ class TblPiecejointeController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+        public function actionAfficherPiecesJointe($id){
+            $model = new TblPiecejointe();
+
+            $model->setAttribute('information_id', $id);
+            $this->render('TblPiecejointe/admin',array(
+			'model'=>$model,
+		));
+        }
 }

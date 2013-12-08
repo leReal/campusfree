@@ -79,7 +79,7 @@ class TblInformationController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','upload', 'resetUploadFile'),
+				'actions'=>array('create','update','upload', 'resetUploadFile', 'afficherPiecesJointe', 'downloadPiece'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -98,8 +98,23 @@ class TblInformationController extends Controller
 	 */
 	public function actionView($id)
 	{
+            /**
+             * Construction des criteres de recgerche des pièces jointes associées
+             * à l'information
+             */
+            $model2 = new TblPiecejointe();
+
+            $model2->setAttribute('information_id', $id);
+            $criteria=new CDbCriteria;
+
+            $criteria->compare('information_id',$id);
+
+            $dataProvider = new CActiveDataProvider($model2, array(
+			'criteria'=>$criteria,
+		));
+            // ************  Fin de la construction ***************
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$this->loadModel($id),'model2'=>$model2,'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -145,19 +160,51 @@ class TblInformationController extends Controller
 
                         Yii::app()->mail->send($message);
                         
-                        Yii::trace(get_class($this).'.create()','Message envoyé avec succès.....');
-                        $this->initialise_var_fichier();
+                        Yii::trace(get_class($this).'.create()','Message envoyé avec succès.....'.$this->getNb_fichier_a_upload());
+                        
 
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                        if($model->save()){
+                            /**
+                             * Enregistrement des pieces jointes
+                             */
+                            for ($index = 0; $index < $this->getNb_fichier_a_upload(); $index++) {
+
+                                $cheminComplet = $this->getFichier($index);
+                                $extension = pathinfo($cheminComplet, PATHINFO_EXTENSION);
+
+                                $fileName = basename($cheminComplet);
+
+                                $this->savePieceJointe($model->id, $cheminComplet, $fileName, $extension);
+                               
+                            }
+                            $this->initialise_var_fichier();
+                            $this->redirect(array('view','id'=>$model->id));
+                        }
+
+                        
+
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
 		));
+
 	}
 
-	/**
+        private function savePieceJointe($informationId, $chemin, $nomFichier, $typeFichier){
+            $model=new TblPiecejointe;
+            $model->setIsNewRecord(true);
+            $model->setAttribute("information_id", $informationId);
+            $model->setAttribute("contenu", $chemin);
+            $model->setAttribute("filename", $nomFichier);
+            $model->setAttribute("filetype", $typeFichier);
+
+            Yii::trace(get_class($this).'savePieceJointe enregistrement piece ..');
+    
+            return $model->save();
+        }
+
+        /**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
@@ -268,7 +315,7 @@ class TblInformationController extends Controller
 
         $this->fichier_a_upload($folder.$result['filename']);
 
-//        print_r('actionUpload: nb fichier = '.$this->getNb_fichier_a_upload().' fichier = '.$folder.$result['filename']);
+//        echo 'actionUpload: fichier = '.$folder.$result['filename'].' file name = '.$fileName.' size = '.$fileSize;
 
         echo $return;// it's array
 }
@@ -285,5 +332,23 @@ public function actionResetUploadFile(){
     $this->render('create',array(
 			'model'=>$model,
 		));
+}
+
+public function actionAfficherPiecesJointe($id){
+            $model = new TblPiecejointe();
+
+            $model->setAttribute('information_id', $id);
+            $this->render('TblPiecejointe/admin',array(
+			'model'=>$model,
+		));
+   }
+
+public function actionDownloadPiece($id){
+
+    
+    $model=TblPiecejointe::model()->findByPk($id);
+
+    $this->redirect(Yii::app()->getBaseUrl().'/uploads/'.$model->getAttribute("filename"));
+ 
 }
 }
