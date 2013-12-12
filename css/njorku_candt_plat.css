@@ -1,0 +1,1391 @@
+/* CSS Document */
+
+* {
+  padding-top:0px;
+  margin:0px;
+  }
+body {
+  background-image:url(../images/bg.jpg);
+  background-repeat:repeat-x;
+  background-color:#FFFFFF;
+  }  
+#main {
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  } 
+#main img {
+   border:none;
+   }  
+#first_header {
+  width:100%;
+  height:30px;
+  }
+/*--------------- candidate and employers login ---------------*/
+
+.top_right {
+  float:right;
+  margin-right:10px;
+  }
+.top_right ul {
+  width:100%;
+  list-style-type:none;
+  margin-top:4px;
+  }
+.top_right a {
+  float:left;
+  text-decoration:none;
+  width:auto;
+  color:#FFFFFF;
+  font-family:Arial;
+  font-size:12px;
+  padding:.2em .4em;
+  }
+.top_right li {
+  display:inline;
+  }   
+#second_header {
+  width:100%;
+  height:100px;
+  } 
+.candidate_logo {
+  float:left;
+  margin-left:66px;
+  margin-top:15px;
+  height:auto;
+  } 
+#platform_content {
+  width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  }
+#platform_login_content {
+  width:900px;
+  float:left;
+  margin-left:66px;
+  }  
+.left_box {
+  float:left;
+  width:450px;
+  margin-top:47px;
+  background-color:#F4F4F4;
+  }
+.candidate_login_box {
+  width:435px;
+  float:left;
+  margin-left:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  } 
+.candidate_login_box h2 {
+  font-family:Arial;
+  color:#333333;
+  font-weight:normal;
+  margin-bottom:10px;
+  font-size:20px;
+  }
+.login_form {
+  float:left;
+  width:440px;
+  margin-top:20px;
+  font-family:Arial;
+  color:#333;
+  font-size:18px;
+  }
+.email {
+  float:left;
+  width:250px;
+  height:30px;
+  border:#333333 1px solid;
+  color:#333;
+  font-family:Arial;
+  font-size:14px;
+  padding-left:4px;
+  padding-right:4px;
+  }   
+.password {
+  float:left;
+  width:250px;
+  height:30px;
+  border:#333333 1px solid;
+  color:#333;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding-left:4px;
+  padding-right:4px;
+  } 
+.candi_login {
+  float:left;
+  width:auto;
+  padding:.4em 2em;
+  color:#FFFFFF;
+  font-size:15px;
+  margin-right:15px;
+  font-family:Arial;
+  background-image:url(../images/login_bg.jpg);
+  background-repeat:repeat-x;
+  text-decoration:none;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  border:0px;
+  
+  }
+.candi_create_acc {
+  float:left;
+  width:auto;
+  color:#0F6E9D;
+  font-family:Arial;
+  text-decoration:none;
+  font-size:14px;
+  margin-top:5px;
+  }             
+.right_box {
+  float:left;
+  margin-top:47px;
+  width:440px;
+  margin-left:5px;
+  }
+.right_box_text {
+  float:left;
+  width:430px;
+  margin-left:20px;
+  font-family:Arial;
+  word-spacing:3px;
+  line-height:16px;
+  font-size:12px;
+  color:#333333;
+  }
+.right_box_text h2 {
+  color:#0F6E9D;
+  margin-top:5px;
+  font-size:28px;
+  margin-bottom:20px;
+  font-weight:normal;
+  }    
+.right_box_text h4 {
+  font-size:15px;
+  margin-bottom:24px;
+  font-weight:normal;
+  } 
+.right_box_text h5 {
+  font-size:17px;
+  font-weight:normal;
+  }  
+.right_box_text p {
+  }  
+.right_box_text img {
+  float:left;
+  margin-right:15px;
+  }  
+.right_box_text ul{
+  float:left;  
+  width:100%;
+  list-style-type:none;
+  margin-top:15px;
+  margin-left:-40px;
+  }
+.right_box_text a {
+  float:left;
+  width:auto;
+  color:#0F6E9D;
+  text-decoration:none;
+  padding:.3em .8em;
+  font-family:Arial;
+  font-size:12px;
+  }
+.right_box_text li {
+  display:inline;
+  }     
+/*--------------- end of candidate and employers login styles ---------------------- */
+
+/*---------- candidate and employers registration styles --------------------*/
+
+.email {
+  float:left;
+  width:250px;
+  height:30px;
+  border:#333333 1px solid;
+  color:#333;
+  font-family:Arial;
+  font-size:14px;
+  }   
+.name {
+  float:left;
+  width:250px;
+  height:30px;
+  border:#333333 1px solid;
+  color:#333;
+  font-family:Arial;
+  font-size:14px;
+  padding-left:4px;
+  padding-right:4px;
+  }
+.cv {
+  float:left;
+  width:250px;
+  height:30px;
+  border:#333333 1px solid;
+  color:#333;
+  font-family:Arial;
+  font-size:14px;
+  }  
+.first_numbers {
+  float:left;
+  width:65px;
+  height:30px;
+  border:#333333 1px solid;
+  color:#333;
+  font-family:Arial;
+  font-size:14px;
+  }
+.second_numbers {
+  float:left;
+  width:176px;
+  margin-left:10px;
+  height:30px;
+  border:#333333 1px solid;
+  color:#333;
+  font-family:Arial;
+  font-size:14px;
+  padding-left:4px;
+  padding-right:4px;
+  }      
+.upload_cv {
+  float:left;
+  width:auto;
+  padding:.4em 2em;
+  color:#FFFFFF;
+  font-size:15px;
+  margin-right:15px;
+  font-family:Arial;
+  background-image:url(../images/login_bg.jpg);
+  background-repeat:repeat-x;
+  text-decoration:none;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  border:0px;
+  }
+.login_form p {
+  font-size:12px;
+  font-weight:normal;
+  }  
+
+/*------------ end of candidate and employers styles ----------- */  
+
+/*-------------- candidate profile page styles----------*/
+.top_search {
+  float:left;
+  width:400px;
+  height:23px;
+  margin-top:1px;
+  margin-left:70px;
+  color:#FFFFFF;
+  font-family:Arial;
+  font-size:12px;
+  }
+.top_search_keyword {
+  float:left;
+  width:200px;
+  height:12px;
+  margin-top:1px;
+  border:#DADADA 1px solid;
+  padding:2px;
+  } 
+.top_search_country {
+  float:left;
+  width:90px;
+  margin-top:1px;
+  height:16px;
+  border:#DADADA 1px solid;
+  font-size:11px;
+  }
+.top_search_button {
+  float:left;
+  width:auto;
+  text-decoration:none;
+  color:#FFFFFF;
+  font-family:Arial;
+  font-size:11px;
+  padding:.3em 1em;
+  background-image:url(../images/top_search_button.jpg);
+  background-repeat:repeat-x;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  border:0px;
+  }  
+.second_header_navigation {
+  float:left;
+  width:auto;
+  margin-left:50px;
+  margin-top:60px;
+  height:40px;
+  }
+.second_header_navigation ul {
+  float:left;
+  width:100%;
+  list-style-type:none;
+  margin-left:-40px;
+  }
+.second_header_navigation a {
+  float:left;
+  width:auto;
+  text-decoration:none;
+  color:#666666;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  padding:.5em .4em;
+  margin-right:10px;
+  }         
+.second_header_navigation li {
+  display:inline;
+  }
+.second_header_navigation a:hover {
+  color:#006699;
+  padding:.5em .4em;
+  background-color:#FFFFFF;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  -moz-border-radius-topleft:6px;
+  -moz-border-radius-topright:6px;
+  -webkit-border-top-left-radius:6px;
+  -webkit-border-top-right-radius:6px;
+  }  
+.second_header_navigation span {
+  color:#006699;
+  padding:.5em .4em;
+  background-color:#FFFFFF;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  -moz-border-radius-topleft:6px;
+  -moz-border-radius-topright:6px;
+  -webkit-border-top-left-radius:6px;
+  -webkit-border-top-right-radius:6px;
+  }  
+.candidate_landing_profile_display {
+  float:left;
+  width:900px;
+  margin-left:50px;
+  border:#CCCCCC 1px solid;
+  margin-top:20px;
+  } 
+.candidate_landing_profile_display_info  {
+  width:750px;
+  float:left;
+  margin-left:25px;
+  font-family:Arial;
+  font-size:12px;
+  color:#666666;
+  word-spacing:3px;
+  line-height:16px;
+  margin-top:30px;
+  margin-bottom:20px;
+  }
+.candidate_landing_profile_display_info h2 {
+  font-size:22px;
+  color:#000000;
+  margin-bottom:20px;
+  } 
+.candidate_landing_profile_display_info img {
+  float:left;
+  margin-right:20px;
+  }
+.candidate_landing_profile_display_info h3 a {
+  font-size:18px;
+  margin-top:15px;
+  text-decoration:underline;
+  color:#006699;
+  }     
+/*------------- end of candidate profile page styles--------*/
+
+/*----------- My profile styles -------------------*/
+.cand_profile_left_panel {
+  float:left;
+  width:160px;
+  margin-left:63px;
+  margin-top:20px;
+  margin-bottom:20px;
+  }
+.cand_profile_left_panel h2 {
+  font-family:Arial;
+  font-size:22px;
+  }
+.cand_profile_left_panel img {
+  }
+.cand_profile_left_panel ul {
+  float:left;
+  width:100%;
+  margin-top:20px;
+  list-style-type:none;
+  margin-left:-30px;
+  }
+.cand_profile_left_panel a {
+  float:left;
+  width:auto;
+  text-decoration:none;
+  background-image:url(../images/edit_profile_button.jpg);
+  background-repeat:repeat-x;
+  color:#FFFFFF;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:12px;
+  padding:.2em .9em;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  }
+.cand_profile_left_panel ul li {
+  display:inline;
+  }          
+.cand_profile_right_panel {
+  float:left;
+  margin-left:40px;
+  line-height:20px;
+  margin-top:100px;
+  margin-bottom:20px;
+  width:500px;
+  font-family:Arial;
+  font-size:12px;
+  }  
+.cand_profile_right_panel h5 {
+  font-size:12px;
+  color:#999999;
+  font-weight:normal;
+  }
+.cand_profile_right_panel strong {
+  color:#999999;
+  font-weight:normal;
+  }
+  
+.change_password {
+  color:#006699;
+  text-decoration:none;
+  font-weight:bold;
+  }
+.cand_profile_right_panel a {
+  color:#006699;
+  }   
+.table_nb   {
+  color:#999999;
+  font-weight:normal;
+  float:left;
+  margin-left:110px;
+  }    
+/*------------ end of My profile styles ---------------*/
+
+
+/*------------  manage resume styles---------------*/
+
+.resume_links {
+  float:left;
+  width:700px;
+  height:30px;
+  margin-left:50px;
+  margin-top:20px;
+  }
+.resume_links ul {
+  float:left;
+  width:100%;
+  margin-top:5px;
+  list-style-type:none;
+  margin-left:-10px;
+  }
+.resume_links a {
+  float:left;
+  width:auto;
+  font-family:Arial;
+  text-decoration:none;
+  margin-right:20px;
+  color:#999999;
+  font-size:14px;
+  font-weight:bold;
+  padding:.3em .6em;
+  border-left:#EBEBEB 1px solid;
+  border-top:#EBEBEB 1px solid;
+  border-right:#EBEBEB 1px solid;
+  }
+.resume_links li {
+  display:inline;
+  }
+.resume_links a:hover {
+  border-bottom:#FFFFFF 2px solid;
+  }
+   
+.upload_resume {
+  float:right;
+  margin-top:25px;
+  margin-right:50px;
+  }  
+.upload_resume a {
+  float:right;
+  width:auto;
+  font-weight:bold;
+  margin-top:2px;
+  color:#FFFFFF;
+  background-color:#006699;
+  font-family:Arial;
+  font-size:12px;
+  text-decoration:none;
+  background-image:url(../images/edit_profile_button.jpg);
+  background-repeat:repeat-x;
+  padding:.3em .6em;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  }         
+.resume_table {
+  float:left;
+  width:800px;
+  margin-left:50px;
+  min-height:400px;
+  border:#EBEBEB 1px solid;
+  } 
+.resume_table_content {
+  float:left;
+  width:750px;
+  margin-top:20px;
+  margin-left:25px;
+  }
+
+/*----------- end of manage resume styles ------------*/
+
+/*------------ My alerts styles-------------*/
+.my_alerts_table{
+  float:left;
+  margin-top:20px;
+  width:800px;
+  margin-left:50px;
+  border:#EBEBEB 1px solid;
+  margin-bottom:20px;
+  }
+.my_alerts_table_content {
+  float:left;
+  width:750px;
+  margin-left:25px;
+  font-family:Arial;
+  margin-top:20px;
+  margin-bottom:20px;
+  } 
+.my_alerts_table_content h2 {
+  float:left;
+  font-size:22px;
+  }
+.create_sms_alerts {
+  float:right;
+  width:auto;
+  margin-top:-10px;
+  text-decoration:none;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:12px;
+  color:#FFFFFF;
+  background-image:url(../images/create_sms_alerts_bg.jpg);
+  background-repeat:repeat-x;
+  padding:.6em .9em;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  }
+.my_alerts_table_content table ul {
+  float:left;
+  width:100%;
+  list-style-type:none;
+  }
+.my_alerts_table_content table ul li a {
+  float:left;
+  width:auto;
+  font-family:Arial;
+  font-size:14px;
+  padding:.5em .8em;
+  border:#D8D8D8 1px solid;
+  background-color:#EBEBEB;
+  margin-right:5px;
+  text-decoration:none;
+  color:#666666;
+  }
+.my_alerts_table_content table ul li {
+  display:inline;
+  }   
+.alert_table_head {
+  float:left;
+  margin-top:10px;
+  font-size:18px;
+  color:#666666;
+  background-color:#EBEBEB;
+  padding:-5px;
+  height:30px;
+  }  
+.alert_table_info  {
+  float:left;
+  margin-top:5px;
+  margin-top:10px;
+  color:#0F6E9D;
+  font-size:14px;
+  padding:-5px;
+  height:30px;
+  }     
+/*------------- end of my alerts styles---------------*/
+
+/*----------- Employer landing page styles ----------*/
+
+.second_header_search {
+  float:left;
+  margin-left:30px;
+  margin-top:30px;
+  }
+.second_search_country {
+  float:left;
+  width:550px;
+  height:25px;
+  font-family:Arial;
+  font-size:16px;
+  border:#DADADA 1px solid;
+  color:#999999;
+  }
+.second_search_button {
+  float:left;
+  width:auto;
+  text-decoration:none;
+  font-weight:bold;
+  color:#FFFFFF;
+  font-family:Arial;
+  font-size:12px;
+  padding:.5em 2.5em;
+  background-image:url(../images/second_head_search_bg.jpg);
+  background-repeat:repeat-x;
+   border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  border:0px;
+  }    
+.cv_search_text {
+  float:left;
+  width:auto;
+  margin-left:5px;
+  margin-top:0px;
+  font-family:Arial;
+  color:#0000;
+  font-size:15px;
+  font-weight:bold;
+  }
+.adv_search_text {
+  float:right;
+  margin-right:145px;
+  width:auto;
+  margin-top:0px;
+  font-family:Arial;
+  color:#666666;
+  font-size:14px;
+  }  
+/*------------ end of employer landing page styles-----*/
+
+
+/*------------ Employer profile styles ------------*/
+
+.employer_landing_profile_display {
+  float:left;
+  width:700px;
+  margin-left:10px;
+  border:#CCCCCC 1px solid;
+  margin-top:20px;
+  } 
+.employer_left_panel {
+  float:left;
+  width:180px;
+  height:300px;
+  margin-top:20px;
+  }
+.employer_profile_left_panel_text {
+  float:left;
+  width:140px;
+  }
+.employer_profile_left_panel_text h2 {
+  float:left;
+  font-family:Arial;
+  color:#13709E;
+  font-size:21px;
+  } 
+.employer_profile_left_panel_text h2 {
+  border-bottom:#DADADA 1px solid;
+  width:155px;
+  }   
+.employer_profile_left_panel_text ul {
+  float:left;
+  width:140px;
+  list-style-type:none;
+  margin-left:-40px;
+  }
+.employer_profile_left_panel_text ul li a {
+  float:left;
+  width:140px;
+  text-decoration:none;
+  border-bottom:#DADADA 1px solid;
+  color:#333333;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:.6em .6em;
+  }
+.employer_profile_left_panel_text ul li {
+  display:block;
+  } 
+  .search_filters {
+  float:left;
+  width:180px;
+  }  
+.search_filters h2 {
+  float:left;
+  font-family:Arial;
+  color:#999999;
+  font-size:21px;
+  border-bottom:none;
+  font-weight:normal;
+  }   
+.search_filters ul{
+  float:left;
+  width:160px;
+  list-style-type:none;
+  margin-left:-60px;
+  margin-top:10px;
+  }
+.search_filters ul li a {
+  float:left;
+  width:170px;
+  text-decoration:none;
+  color:#333333;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:.2em .4em;
+  }
+.search_filters ul li {
+  display:block;
+  margin-left:20px;
+  }   
+.search_filters ul li a:hover {
+  background-image:url(images/search_filter_hover_bg3.jpg);
+  }
+.employer_profile_left_panel_text ol {
+  float:left;
+  width:140px;
+  margin-top:30px;
+  margin-left:-40px;
+  list-style-type:none;
+  }
+.employer_profile_left_panel_text ol li a {
+  float:left;
+  width:80px;
+  text-decoration:none;
+  margin-bottom:3px;
+  color:#fff;
+  font-family:Arial;
+  font-size:13px;
+  font-weight:bold;
+  padding:.5em 1.5em;
+  background-image:url(../images/second_head_search_bg.jpg);
+  background-repeat:repeat-x;
+   border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  }
+.employer_profile_left_panel_text ol li {
+  display:block;
+  }                 
+  
+.employer_profile_left_panel {
+  float:left;
+  width:160px;
+  margin-left:10px;
+  margin-top:20px;
+  margin-bottom:20px;
+  }
+.employer_profile_left_panel h2 {
+  font-family:Arial;
+  font-size:22px;
+  }
+.employer_profile_left_panel img {
+  }
+.employer_profile_left_panel ul {
+  float:left;
+  width:100%;
+  margin-top:20px;
+  list-style-type:none;
+  margin-left:-30px;
+  }
+.employer_profile_left_panel a {
+  float:left;
+  width:auto;
+  text-decoration:none;
+  background-image:url(../images/edit_profile_button.jpg);
+  background-repeat:repeat-x;
+  color:#FFFFFF;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:12px;
+  padding:.2em .9em;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  }
+.employer_profile_left_panel ul li {
+  display:inline;
+  }          
+.employer_profile_right_panel {
+  float:left;
+  margin-left:20px;
+  line-height:20px;
+  margin-top:100px;
+  margin-bottom:20px;
+  width:500px;
+  font-family:Arial;
+  font-size:12px;
+  }  
+.employer_profile_right_panel h5 {
+  font-size:12px;
+  color:#999999;
+  font-weight:normal;
+  }
+.employer_profile_right_panel strong {
+  color:#999999;
+  font-weight:normal;
+  }
+  
+.change_password {
+  color:#006699;
+  text-decoration:none;
+  font-weight:bold;
+  }
+.employer_profile_right_panel p a {
+  color:#006699;
+  float:right;
+  }   
+.emp_table_nb   {
+  color:#999999;
+  font-weight:normal;
+  float:left;
+  margin-left:90px;
+  }      
+
+
+/*---------- end of employer profile page styles--------*/
+
+/*------------ platform_footer --------------------------*/
+#platform_footer {
+  width:100%;
+  position:relative;
+  height:30px;
+  bottom:0px;
+  float:left;
+  border-top:#CCCCCC 1px solid;
+  margin-top:20px;
+  }
+.left_footer {
+  float:left;
+  width:auto;
+  margin-top:5px;
+  margin-left:55px;
+  }
+.left_footer ul {
+  float:left;
+  width:100%;
+  list-style-type:none;
+  }
+.left_footer a {
+  float:left;
+  width:auto;
+  color:#666666;
+  text-decoration:none;
+  font-family:Arial;
+  font-size:12px;
+  padding:.3em .6em;
+  }
+.left_footer li {
+  display:inline;
+  }        
+.right_footer {
+  float:right;
+  width:auto;
+  margin-top:5px;
+  margin-right:100px;
+  } 
+.right_footer ul {
+  float:right;
+  width:100%;
+  list-style-type:none;
+  }
+.right_footer a {
+  float:right;
+  width:auto;
+  color:#666666;
+  text-decoration:none;
+  font-family:Arial;
+  font-size:12px;
+  padding:.3em .6em;
+  }
+.right_footer li {
+  display:inline;
+  }    
+/*---------------- end of platform_footer ----------------------*/        
+
+/*-----------------employers_top_nav---------------------------*/
+
+.employers_top_nav {
+  float:right;
+  margin-right:25px;
+  width:400px;
+  height:20px;
+  }
+.employers_top_nav   ul{
+  float:left;
+  list-style-type:none;
+  margin-left:-40px;
+  width:100%;
+  margin-top:3px;
+  }
+.employers_top_nav a {
+  float:left;
+  width:auto;
+  color:#000000;
+  font-weight:bold;
+  font-family:Arial;
+  margin-right:5px;
+  background-color:#EBEBEB;
+  font-size:11px;
+  padding:.4em .9em;
+  text-decoration:none;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  -moz-border-radius-topleft:5px;
+  -moz-border-radius-topright:5px;
+  -webkit-border-top-left-radius:5px;
+  -webkit-border-top-right-radius:5px;
+  }
+.employers_top_nav li {
+  display:inline;
+  }
+.employers_top_nav a:hover {
+  background-color:#FFFFFF;
+  }      
+
+.employer_top_setting {
+  float:right;
+  width:auto;
+  margin-top:10px;
+  margin-right:10px;
+  font-size:12px;
+  font-family:Arial;
+  }  
+.top_setting_dropdown {
+  width:15px;
+  background-image:url(images/empl_top_set_dropdwn_bg.jpg);
+  background-repeat:no-repeat;
+  border:none;
+  background-color:#EBEBEB;
+  }	 
+.top_empl_name {
+  margin-top:0px;
+  float:left;
+  font-weight:bold;
+  }   
+  
+/*--------------------- end of employers_top_nav-----------------------*/
+
+/*------------ Employers search results page styles-----*/
+
+#employer_search_content {
+  float:left;
+  width:1100px;
+  margin-left:50px;
+  line-height:19px;
+  }
+
+.employer_search_results_panel {
+  float:left;
+  width:596px;
+  margin-top:-10px;
+  border-left:#EBEBEB 2px solid;
+  border-right:#EBEBEB 2px solid;
+  border-bottom:#EBEBEB 2px solid;
+  }
+.employer_search_results_panel_text p a {
+  color:#4F58D9;
+  font-weight:bold;
+  text-decoration:none;
+  } 
+.employer_search_results_panel_text {
+  float:left;
+  width:580px;
+  font-family:Arial;
+  margin-top:-10px;
+  margin-left:6px;
+  font-size:12px;
+  } 
+.employer_search_results_panel_text h5 {
+  color:#858585;
+  font-weight:normal;
+  font-size:11px;
+    }
+.employer_search_results_panel p {
+  color:#858585;
+  font-weight:normal;
+  font-size:12px;
+  }    
+.employer_search_results_panel strong, h3 {
+  font-family:Arial;
+  font-size:18px;
+  font-weight:normal;
+  color:#4465AA;
+  }
+.employer_search_results_panel hr {
+  margin-top:10px;
+  }   
+.employer_search_results_panel img {
+  float:left;
+  margin-right:10px;
+  border:#CDCDCD 3px solid;
+  } 
+  
+.employer_search_results_panel b {
+  color:#333333;
+  font-weight:normal;
+  }   
+
+.view_cv {
+  margin-top:-100px;
+  text-decoration:none;
+  font-weight:normal;
+  font-size:12px;
+  color:#fff;
+  padding:.0em 2.5em;
+  background-color:#A5A5A5;
+  margin-left:450px;
+  }
+
+.emplyers_search_result_right {
+  float:left;
+  width:160px;
+  margin-left:10px;
+  font-family:Arial;
+  font-size:16px;
+  line-height:19px;
+  margin-top:20px;
+  }
+  
+.emplyers_search_result_right h3 {
+  font-family:Arial;
+  font-size:14px;
+  color:#0F6E9D;
+  }    
+
+/*------------ employers search result page styles -------*/
+
+/*----------------- employers_view_condidate_profile styles--------- */
+
+.left_candidate_contact_links {
+  float:left;
+  width:180px;
+  }  
+   
+.left_candidate_contact_links ul{
+  float:left;
+  width:160px;
+  list-style-type:none;
+  margin-left:-60px;
+  margin-top:20px;
+  }
+.left_candidate_contact_links ul li a {
+  float:left;
+  width:170px;
+  text-decoration:none;
+  color:#333333;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:.2em .4em;
+  }
+.left_candidate_contact_links ul li a span{
+  float:left;
+  width:170px;
+  margin-left:-5px;
+  text-decoration:none;
+  color:#333333;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:.2em .4em;
+  background-color:#EBEBEB;
+  }  
+.left_candidate_contact_links ul li {
+  display:block;
+  margin-left:20px;
+  }   
+
+.candidate_profile_details {
+  float:left;
+  width:585px;
+  margin-left:5px;
+  margin-top:20px;
+  margin-bottom:10px;
+  } 
+.candidate_profile_details h2 {
+  color:#4465AA;
+  font-family:Arial;
+  margin-top:10px;
+  font-size:22px;
+  margin-bottom:10px;
+  }
+.candidate_profile_details p  {
+  font-family:Arial;
+  font-weight:normal;
+  }
+.candidate_profile_details p em {
+  font-family:Arial;
+  color:#B4B4B4;
+  font-size:18px;
+  font-style:normal;
+  }  
+.candidate_profile_details p span {
+  font-family:Arial;
+  color:#B4B4B4;
+  font-size:18px;
+  font-style:normal;
+  }  
+.candidate_profile_details p b {
+  font-size:18px;
+  font-weight:bold;
+  font-weight:normal;
+  }  
+.detail_box  {
+  float:left;
+  margin-bottom:20px;
+  width:581px;
+  border:#CFD6E6 2px solid;
+   border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  -moz-border-radius-bottomright:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  } 
+.detail_box_head {
+  float:left;
+  width:571px;
+  height:40px;
+  background-color:#EBEBEB;
+  margin-left:5px;
+  margin-top:5px;
+  }
+.detail_box_head h2 {
+  font-family:Arial;
+  font-size:20px;
+  margin-top:10px;
+  margin-left:10px;
+  font-weight:normal;
+  color:#4465AA;
+  }   
+.detail_table {
+  float:left;
+  margin-top:10px;
+  border:none;
+  font-family:Arial;
+  font-size:12px;
+  color:#666666;
+  width:571px;
+  margin-bottom:20px;
+  margin-top:10px;
+  margin-left:5px;
+  } 
+.detail_table_date {
+  float:left;
+  margin-left:10px;
+  width:160px;
+  font-family:Arial;
+  font-size:12px;
+  font-weight:bold;
+  }
+.detail_table_date p{
+  float:left;
+  width:200px;
+  font-family:Arial;
+  font-size:12px;
+  font-weight:bold;
+  }  
+.detail_table_info {
+  float:left;
+  margin-left:10px;
+  font-family:Arial;
+  font-size:13px;
+  line-height:17px;
+  word-spacing:3px;
+  width:390px;
+  font-weight:normal;
+  } 
+.detail_table_info p {
+  color:#000000;
+  padding-bottom:10px;
+  } 
+
+.detail_table_info p em {
+  color:#999999;
+  font-size:12px;
+  }    
+.detail_table_info strong {
+  text-transform:uppercase;
+  color:#333333;
+  font-size:12px;
+  font-weight:bold;
+  }  
+.detail_box_text {
+  float:left;
+  width:571px;
+  margin-left:20px;
+  margin-top:10px;
+  font-family:Arial;
+  font-size:12px;
+  line-height:17px;
+  word-spacing:3px;
+  margin-bottom:10px;
+  } 
+.detail_box_text p {
+  color:#333333;
+  }  
+.detail_box_text h4 {
+  font-size:14px;
+  }      
+.detail_box_text p span {
+  color:#4465AA;
+  font-size:14px;
+  font-weight:bold;
+  }
+.detail_box_text p a {
+  color:#4465AA;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:bold;
+  }      
+/*----------------- end of employers_view_condidate_profile styles--------- */
+
+/** modification by application developer */
+ 
+ .notice{
+	background-color:#FFFF99;
+	border:2px solid #FFCC00;
+	padding:10px;
+}
+.title_cv{
+ width:250px;
+  height:30px;
+  border:#333333 1px solid;
+  color:#333;
+  font-family:Arial;
+  font-size:14px;
+  margin-bottom: 20px;
+  }
+ .space-bottom{
+	margin-bottom: 50px;
+ }
+ .resume_links  .underline a {
+text-decoration: underline;
+}
+
