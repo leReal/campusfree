@@ -27,37 +27,75 @@
 	</div><!-- header -->
 
 		<div id="mainMbMenu">
-		<?php $this->widget('application.extensions.mbmenu.MbMenu',array(
-			'items'=>array(
-                               	array('label'=>'Accueil', 'url'=>array('/site/index'),
-                                     ),
-                                array('label'=>'Connexion', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest), 
-		                array('label'=>'Organisation', 'url'=>array('/information'), 
-                                         'items'=>array( 
-                                          array('label'=>'Institutions', 'url'=>array('/information/TblInstitution')), 
-                                          array('label'=>'Etablissements', 'url'=>array('/information/TblEtablissement')), 
-                                          array('label'=>'Filières', 'url'=>array('/information/TblFiliere')),    
-                                          array('label'=>'Classes', 'url'=>array('/information/TblClasse')),  
-                                           ),'visible'=>!Yii::app()->user->isGuest 
-                                       ),
-                            array('label'=>'Informations', 'url'=>array('/information'),
+		<?php
+//                $this->widget('application.extensions.mbmenu.MbMenu',array(
+//			'items'=>array(
+//                               	array('label'=>'Accueil', 'url'=>array('/site/index'),
+//                                     ),
+//                                array('label'=>'Connexion', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+//		                array('label'=>'Organisation', 'url'=>array('/information'),
+//                                         'items'=>array(
+//                                          array('label'=>'Institutions', 'url'=>array('/information/TblInstitution')),
+//                                          array('label'=>'Etablissements', 'url'=>array('/information/TblEtablissement')),
+//                                          array('label'=>'Filières', 'url'=>array('/information/TblFiliere')),
+//                                          array('label'=>'Classes', 'url'=>array('/information/TblClasse')),
+//                                           ),'visible'=>!Yii::app()->user->isGuest
+//                                       ),
+//                            array('label'=>'Informations', 'url'=>array('/information'),
+//                                'items'=>array(
+//                                 array('label'=>'Information', 'url'=>array('/information/TblInformation')),
+//                                 array('label'=>'Abonnements', 'url'=>array('/information/TblAbonnement')),
+//                                    ),'visible'=>!Yii::app()->user->isGuest
+//                                ),
+//
+//                        array('label'=>'Administration', 'url'=>array('/information'),
+//                                       'items'=>array(
+//                                    array('label'=>'Utilisateurs','url'=>array('/information/TblUtilisateur')),
+//                                    array('label'=>'Informateurs','url'=>array('/information/TblInformateur')),
+//                                    array('label'=>'Représentant','url'=>array('/information/TblRepresentant')),
+//                                    array('label'=>'Coordonnateur','url'=>array('/information/TblCoordonnateur')),
+//                                    ),'visible'=>!Yii::app()->user->isGuest),
+//
+//			array('label'=>'Déconnexion ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+//			),
+//		));
+                ?>
+
+
+        <?php
+            Yii::app()->bootstrap->register();
+            $this->widget('bootstrap.widgets.TbMenu', array(
+    'type'=>'pills', // '', 'tabs', 'pills' (or 'list')
+    'stacked'=>false, // whether this is a stacked menu
+    'dropup'=>false,
+    'items'=>array(
+        array('label'=>'Accueil', 'url'=>array('/site/index'), 'active'=>true, 'visible'=>!Yii::app()->user->isGuest),
+        array('label'=>'Connexion', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+        array('label'=>'Organisation', 'url'=>array('/information'),'visible'=>!Yii::app()->user->isGuest, 'items'=>array(
+                                          array('label'=>'Institutions', 'url'=>array('/information/TblInstitution')),
+                                          array('label'=>'Etablissements', 'url'=>array('/information/TblEtablissement')),
+                                          array('label'=>'Filières', 'url'=>array('/information/TblFiliere')),
+                                          array('label'=>'Classes', 'url'=>array('/information/TblClasse')),
+                                           ),),
+        array('label'=>'Informations', 'url'=>array('/information'),
                                 'items'=>array(
-                                 array('label'=>'Information', 'url'=>array('/information/TblInformation')), 
-                                 array('label'=>'Abonnements', 'url'=>array('/information/TblAbonnement')), 
+                                 array('label'=>'Information', 'url'=>array('/information/TblInformation')),
+                                 array('label'=>'Abonnements', 'url'=>array('/information/TblAbonnement')),
                                     ),'visible'=>!Yii::app()->user->isGuest
                                 ),
-                            
-                        array('label'=>'Administration', 'url'=>array('/information'),
+
+        array('label'=>'Administration', 'url'=>array('/information'),
                                        'items'=>array(
                                     array('label'=>'Utilisateurs','url'=>array('/information/TblUtilisateur')),
                                     array('label'=>'Informateurs','url'=>array('/information/TblInformateur')),
                                     array('label'=>'Représentant','url'=>array('/information/TblRepresentant')),
                                     array('label'=>'Coordonnateur','url'=>array('/information/TblCoordonnateur')),
-                                    ),'visible'=>!Yii::app()->user->isGuest), 
-                            
-			array('label'=>'Déconnexion ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
+                                    ),'visible'=>!Yii::app()->user->isGuest),
+
+        array('label'=>'Déconnexion ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+        ),
+)); ?>
+
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(

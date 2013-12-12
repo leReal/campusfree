@@ -1,5 +1,5 @@
 <?php
-
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -19,6 +19,7 @@ return array(
                 'application.extensions.EAjaxUpload.*',
                 'application.modules.rights.*',
                 'application.modules.rights.components.*',
+                'application.extensions.bootsrap.*',
 	),
   
 	'modules'=>array(
@@ -59,6 +60,9 @@ return array(
 			'allowAutoLogin'=>true,
                         'class'=>'RWebUser',      // Allows super users access implicitly.
 		),
+                'bootstrap'=>array(
+                            'class'=>'bootstrap.components.Bootstrap',
+                ),
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
@@ -68,12 +72,12 @@ return array(
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
-                        'class'=>'RDbAuthManager',
+//                        'class'=>'RDbAuthManager',
 		),
 		
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
+//		'db'=>array(
+//			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+//		),
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
@@ -91,10 +95,10 @@ return array(
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
-				array(
-					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
-				),
+//				array(
+////					'class'=>'CFileLogRoute',
+//					'levels'=>'error, warning',
+//				),
 				// uncomment the following to show log messages on web pages
 				
 				array(
@@ -124,6 +128,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'campusfrees@gmail.com.com',
+		'adminEmail'=>'campusfrees@gmail.com',
 	),
 );
