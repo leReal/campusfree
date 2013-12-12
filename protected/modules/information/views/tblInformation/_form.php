@@ -14,7 +14,7 @@
     )
 )); ?>
 
-	<p class="note">Les champs avec <span class="required">*</span> sont obligatoires.</p>
+	<p class="note">Les champs avec la marque <span class="required">*</span> sont obligatoires.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -58,8 +58,6 @@ array(
                 echo CHtml::link('Effacer fichiers',$url=Yii::app()->createUrl('information/tblInformation/resetUploadFile'));
                 ?>
         </div>
-        
-
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Envoyer' : 'Envoyer'); ?>
