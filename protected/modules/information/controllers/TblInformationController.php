@@ -135,10 +135,27 @@ class TblInformationController extends Controller
 		if(isset($_POST['TblInformation']))
 		{
                     $model->attributes=$_POST['TblInformation'];
+
+                        $user = $this->getUser();
+                        if(!$this->estInformateur()){
+
+                            echo "<br>Vous n'etes pas un informateur";
+                            $this->render('create',array(
+                                'model'=>$model,
+                            ));
+                        }
+                        $model->setAttribute("id_informateur", $user->getAttribute("id"));
                         $message= new YiiMailMessage;
 
                         $message->subject    = $model->titremail;
                         $message->setBody($model->contenumail, 'text/html');
+
+                        echo 'commencons';
+                        foreach ($this->sendGetMails() as $value){
+                             $message->addTo($value);
+                             Yii::trace(get_class($this).'.create()','Mail : '.$value);
+                             echo '<br> email : '.$value;
+                        }
                         $message->addTo("elvis.tchikapa@gmail.com");
                         $message->addTo("rostowgokeng@gmail.com");
                         $message->addTo("elvistchikapa@yahoo.com");
@@ -152,16 +169,16 @@ class TblInformationController extends Controller
                         for ($index = 0; $index < $this->getNb_fichier_a_upload(); $index++) {
 
                             $swiftAttachment = Swift_Attachment::fromPath($this->getFichier($index)); // create a Swift Attachment
-                            $message->attach($swiftAttachment); // now attach the correct type 
-                           
+                            $message->attach($swiftAttachment); // now attach the correct type
+
                         }
 
                         Yii::trace(get_class($this).'.create()','Avant envoie ....');
 
                         Yii::app()->mail->send($message);
-                        
+
                         Yii::trace(get_class($this).'.create()','Message envoyé avec succès.....'.$this->getNb_fichier_a_upload());
-                        
+
 
                         if($model->save()){
                             /**
@@ -175,7 +192,7 @@ class TblInformationController extends Controller
                                 $fileName = basename($cheminComplet);
 
                                 $this->savePieceJointe($model->id, $cheminComplet, $fileName, $extension);
-                               
+
                             }
                             $this->initialise_var_fichier();
                             $this->redirect(array('view','id'=>$model->id));
@@ -350,5 +367,57 @@ public function actionDownloadPiece($id){
 
     $this->redirect(Yii::app()->getBaseUrl().'/uploads/'.$model->getAttribute("filename"));
  
+}
+private function getUser(){
+
+    return $_SESSION["user_connecte"];
+}
+
+private function estInformateur(){
+    // 1. Vérifions si l'utilisateur connecté est un informateur
+    $user = $this->getUser();
+   return $user->getAttribute("type") == 1;
+}
+private function sendGetMails(){
+
+    $mails = array();
+    $count = 0;
+    // 1. Vérifions si l'utilisateur connecté est un informateur
+    $user = $_SESSION["user_connecte"];
+    if($this->estInformateur()){
+
+        // 2. Retrouvons les classes dont l'informateur a la charge
+        $informateur_classe = new InformateurClasse();
+        $attributs=array(
+			// username => password
+			'id_utilisateur'=>$user->getAttribute("id"),
+
+		);
+
+        $informateurs_classe = $informateur_classe->findAllByAttributes($attributs,'',array());
+        foreach ($informateurs_classe as $value) {
+
+            // 3. Retrouvons les users qu'il peut informer, pour chacune des classes
+            $attributs_abonnement=array(
+                'classe_id'=>$value->getAttribute("id_classe"),
+            );
+            $abonnement = new TblAbonnement();
+            $abonnes = $abonnement->findAllByAttributes($attributs_abonnement,'',array());
+            
+            foreach ($abonnes as $value2) {
+
+                // 3. On reccupere les mails de ces users ayant le package premium
+                if($value2->getAttribute("package") == "premium"){
+                    $mails[$count] = $value2->getAttribute("adresseemail1");
+                    $count++;
+                }
+               
+            }
+        }
+
+
+    }
+
+    return $mails;
 }
 }
