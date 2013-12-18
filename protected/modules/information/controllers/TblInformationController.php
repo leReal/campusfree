@@ -1,6 +1,6 @@
 <?php
 
-class TblInformationController extends Controller
+class TblInformationController extends RController
 {
     
         /**
@@ -61,6 +61,7 @@ class TblInformationController extends Controller
 	public function filters()
 	{
 		return array(
+                        'rights', // perform access control for CRUD operations
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
 		);

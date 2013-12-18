@@ -1,6 +1,6 @@
 <?php
 
-class TblAbonnementController extends Controller
+class TblAbonnementController extends RController
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -14,11 +14,13 @@ class TblAbonnementController extends Controller
 	public function filters()
 	{
 		return array(
+                        'rights', // perform access control for CRUD operations
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
+     
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.

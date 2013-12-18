@@ -70,7 +70,7 @@
     'dropup'=>false,
     'items'=>array(
         array('label'=>'Accueil', 'url'=>array('/site/index'), 'active'=>true, 'visible'=>!Yii::app()->user->isGuest),
-        array('label'=>'Connexion', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+        array('label'=>'Connexion', 'url'=>array('/user/login'), 'visible'=>Yii::app()->user->isGuest),
         array('label'=>'Organisation', 'url'=>array('/information'),'visible'=>!Yii::app()->user->isGuest, 'items'=>array(
                                           array('label'=>'Institutions', 'url'=>array('/information/TblInstitution')),
                                           array('label'=>'Etablissements', 'url'=>array('/information/TblEtablissement')),
@@ -86,6 +86,7 @@
 
         array('label'=>'Administration', 'url'=>array('/information'),
                                        'items'=>array(
+                                    array('label'=>Yii::t('app','Droits'), 'url'=>array('/rights')),       
                                     array('label'=>'Utilisateurs','url'=>array('/information/TblUtilisateur')),
                                     array('label'=>'Informateurs','url'=>array('/information/TblInformateur')),
                                     array('label'=>'Représentant','url'=>array('/information/TblRepresentant')),
