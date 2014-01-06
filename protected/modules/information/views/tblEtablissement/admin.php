@@ -44,13 +44,14 @@ $('.search-form form').submit(function(){
 		'nom',
 		'adresse',
 		'telephone1',
-		'telephone2',
-		'telephone3',
 		'boitepostale',
 		'ville',
-		'id_institution',
-		array(
+                array(  
+                 'name'=>'id_institution',
+                 'value'=>'$data->iNSTITUTION->nom',
+                 ),		array(
 			'class'=>'CButtonColumn',
 		),
 	),
 )); ?>
+

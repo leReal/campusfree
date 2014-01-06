@@ -1,6 +1,6 @@
 <?php
-/* @var $this TblInformateurController */
-/* @var $model TblUtilisateur */
+/* @var $this TblCoordonnateurController */
+/* @var $model User */
 
 $this->breadcrumbs=array(
 	'Coordonnateurs'=>array('index'),
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Modifier un coordonnateur<?php echo $model->id; ?></h1>
+<h1>Modification du coordonnateur<?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

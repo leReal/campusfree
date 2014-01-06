@@ -57,7 +57,7 @@ class InformateurClasse extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'idClasse' => array(self::BELONGS_TO, 'TblClasse', 'id_classe'),
-			'idUtilisateur' => array(self::BELONGS_TO, 'TblUtilisateur', 'id_utilisateur'),
+			'idUtilisateur' => array(self::BELONGS_TO, 'User', 'id_utilisateur'),
 		);
 	}
 
@@ -67,9 +67,9 @@ class InformateurClasse extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'id_classe' => 'Id Classe',
-			'id_utilisateur' => 'Id Utilisateur',
+			'id' => 'Identifiant',
+			'id_classe' => 'Classe',
+			'id_utilisateur' => 'Informateur',
 		);
 	}
 

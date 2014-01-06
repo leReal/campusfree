@@ -1,9 +1,9 @@
 <?php
-/* @var $this TblInformateurController */
+/* @var $this TblRepresentantController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Informateurs',
+	'Représentants',
 );
 
 $this->menu=array(

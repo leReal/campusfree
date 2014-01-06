@@ -76,12 +76,14 @@ class AdminController extends Controller
 	public function actionCreate()
 	{
 		$model=new User;
+//                $model->type=1;
 		$profile=new Profile;
 		$this->performAjaxValidation(array($model,$profile));
 		if(isset($_POST['User']))
 		{
 			$model->attributes=$_POST['User'];
 			$model->activkey=Yii::app()->controller->module->encrypting(microtime().$model->password);
+                        if(isset ($_POST['Profile']))
 			$profile->attributes=$_POST['Profile'];
 			$profile->user_id=0;
 			if($model->validate()&&$profile->validate()) {

@@ -42,8 +42,10 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		'id',
 		'nom',
-		'id_filiere',
-		array(
+                array(  
+                 'name'=>'id_filiere',
+                 'value'=>'$data->eFILIERE->nom',
+                 ),		array(
 			'class'=>'CButtonColumn',
 		),
 	),

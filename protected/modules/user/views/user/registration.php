@@ -1,3 +1,4 @@
+
 <?php $this->pageTitle=Yii::app()->name . ' - '.UserModule::t("Registration");
 $this->breadcrumbs=array(
 	UserModule::t("Registration"),
@@ -38,7 +39,7 @@ $this->breadcrumbs=array(
 	<?php echo $form->passwordField($model,'password'); ?>
 	<?php echo $form->error($model,'password'); ?>
 	<p class="hint">
-	<?php echo UserModule::t("Minimal password length 4 symbols."); ?>
+	<?php echo UserModule::t("Minimum 4 lettres."); ?>
 	</p>
 	</div>
 	
@@ -78,18 +79,13 @@ $this->breadcrumbs=array(
 			}
 		}
 ?>
-	<?php if (UserModule::doCaptcha('registration')): ?>
-	<div class="row">
-		<?php echo $form->labelEx($model,'verifyCode'); ?>
-		
-		<?php $this->widget('CCaptcha'); ?>
-		<?php echo $form->textField($model,'verifyCode'); ?>
-		<?php echo $form->error($model,'verifyCode'); ?>
-		
-		<p class="hint"><?php echo UserModule::t("Please enter the letters as they are shown in the image above."); ?>
-		<br/><?php echo UserModule::t("Letters are not case-sensitive."); ?></p>
+
+        <div class="row">
+		<?php echo $form->labelEx($model,'type'); ?>
+                <?php echo $form->dropDownList($model,'type',CHtml::listData(TblTypeUtlisateur::model()->findAll(),'id', 'nom'),
+                        array('empty' => "Sélectionnez un type dans la liste")); ?>		
+                <?php echo $form->error($model,'type'); ?>
 	</div>
-	<?php endif; ?>
 	
 	<div class="row submit">
 		<?php echo CHtml::submitButton(UserModule::t("Register")); ?>

@@ -54,7 +54,7 @@ class TblTypeUtlisateur extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'tblUtilisateurs' => array(self::HAS_MANY, 'TblUtilisateur', 'type'),
+			'user' => array(self::HAS_MANY, 'User', 'type'),
 		);
 	}
 

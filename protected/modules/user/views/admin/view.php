@@ -36,11 +36,13 @@ $this->menu=array(
 	}
 	
 	array_push($attributes,
-		'password',
 		'email',
-		'activkey',
 		'create_at',
 		'lastvisit_at',
+                array(  
+                 'name'=>'type',
+	         'value' => User::itemAlias("UserTypes",$model->type),
+                 ),
 		array(
 			'name' => 'superuser',
 			'value' => User::itemAlias("AdminStatus",$model->superuser),
@@ -50,11 +52,11 @@ $this->menu=array(
 			'value' => User::itemAlias("UserStatus",$model->status),
 		)
 	);
+?>        
 	
-	$this->widget('zii.widgets.CDetailView', array(
+	<?php $this->widget('zii.widgets.CDetailView', array(
 		'data'=>$model,
 		'attributes'=>$attributes,
 	));
-	
+	?>
 
-?>

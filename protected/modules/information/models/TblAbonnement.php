@@ -16,7 +16,7 @@
  * @property string $telephone3
  * @property string $datenaissance
  * @property string $adresse
- * @property string $package
+ * @property int $package
  * @property string $photo
  */
 class TblAbonnement extends CActiveRecord
@@ -51,6 +51,9 @@ class TblAbonnement extends CActiveRecord
 			array('id, classe_id', 'numerical', 'integerOnly'=>true),
 			array('matricule', 'length', 'max'=>15),
 			array('nom, prenom, adresseemail1, adresseemail2, adresse, package', 'length', 'max'=>50),
+			array('matricule', 'unique', 'message' => "Matricule appartenant déjà à un abonné!!!!"),
+			array('adresseemail1', 'unique', 'message' => "Cette adresse email est déjà attribuée à un abonné!!!"),
+			array('telephone1', 'unique', 'message' => "Ce numéro appartient déjà à un abonné!!!"),
 			array('telephone1, telephone2, telephone3', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -66,6 +69,8 @@ class TblAbonnement extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'packages' => array(self::BELONGS_TO, 'TblPackage', 'package'),
+                    'classe' => array(self::BELONGS_TO, 'TblClasse', 'classe_id'),
 		);
 	}
 
@@ -80,9 +85,9 @@ class TblAbonnement extends CActiveRecord
 			'nom' => 'Nom',
 			'prenom' => 'Prenom',
 			'classe_id' => 'Classe',
-			'adresseemail1' => 'Adresse email 1',
-			'adresseemail2' => 'Adresse email 2',
-			'telephone1' => 'Téléphone 1',
+			'adresseemail1' => 'Adresse email',
+			'adresseemail2' => 'Adresse email',
+			'telephone1' => 'Téléphone',
 			'telephone2' => 'Téléphone 2',
 			'telephone3' => 'Téléphone 3',
 			'datenaissance' => 'Date de naissance',

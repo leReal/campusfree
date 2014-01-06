@@ -25,15 +25,27 @@ $this->menu=array(
 		'matricule',
 		'nom',
 		'prenom',
-		'classe_id',
+	),
+)); ?>
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model->classe,
+	'attributes'=>array(
+		"nom:text:Classe",
+	),
+)); ?>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
 		'adresseemail1',
-		'adresseemail2',
 		'telephone1',
-		'telephone2',
-		'telephone3',
-		'datenaissance',
 		'adresse',
-		'package',
-		'photo',
+	),
+)); ?>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model->packages,
+	'attributes'=>array(
+		"nom:text:Package souscrit",
 	),
 )); ?>

@@ -43,11 +43,17 @@ $('.search-form form').submit(function(){
 		'matricule',
 		'nom',
 		'prenom',
-		'classe_id',
+                array(  
+                 'name'=>'classe_id',
+                 'value'=>'$data->classe->nom',
+                 ),
 		'adresseemail1',
 		'telephone1',
 		'adresse',
-		'package',
+		array(  
+                 'name'=>'package',
+                 'value'=>'$data->packages->nom',
+                 ),
 		array(
 			'class'=>'CButtonColumn',
 		),

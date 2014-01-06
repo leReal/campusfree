@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Liste des institution', 'url'=>array('index')),
+	array('label'=>'Liste des institutions', 'url'=>array('index')),
 	array('label'=>'Créer une institution', 'url'=>array('create')),
 	array('label'=>"Détails de l'institution", 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Gérer les institution', 'url'=>array('admin')),
+	array('label'=>'Gérer les institutions', 'url'=>array('admin')),
 );
 ?>
 

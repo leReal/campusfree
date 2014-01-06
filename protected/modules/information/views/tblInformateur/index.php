@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Créer un informateur', 'url'=>array('create')),
-	array('label'=>'Gérer un informateur', 'url'=>array('admin')),
+	array('label'=>'Gérer les informateurs', 'url'=>array('admin')),
 );
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 
-class InformateurClasseController extends Controller
+class InformateurClasseController extends RController
 {
 	public function actionIndex()
 	{

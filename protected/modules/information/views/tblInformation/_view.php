@@ -18,13 +18,8 @@
 	<br />
         
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_informateur')); ?>:</b>
-	<?php echo CHtml::encode($data->id_informateur); ?>
+	<?php echo CHtml::encode($data->informateur->username); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('etablissement_id')); ?>:</b>
-	<?php echo CHtml::encode($data->etablissement_id); ?>
-	<br />
-
-
-
+        
 </div>

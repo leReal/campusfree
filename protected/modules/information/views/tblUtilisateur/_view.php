@@ -49,6 +49,5 @@
 	<?php echo CHtml::encode($data->lieunaissance); ?>
 	<br />
 
-	 ?>
 
 </div>

@@ -24,11 +24,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('telephone2')); ?>:</b>
 	<?php echo CHtml::encode($data->telephone2); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('telephone3')); ?>:</b>
-	<?php echo CHtml::encode($data->telephone3); ?>
-	<br />
-
+        
 	<b><?php echo CHtml::encode($data->getAttributeLabel('boitepostale')); ?>:</b>
 	<?php echo CHtml::encode($data->boitepostale); ?>
 	<br />

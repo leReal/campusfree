@@ -22,31 +22,15 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('classe_id')); ?>:</b>
-	<?php echo CHtml::encode($data->classe_id); ?>
+	<?php echo CHtml::encode($data->classe->nom); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('adresseemail1')); ?>:</b>
 	<?php echo CHtml::encode($data->adresseemail1); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('adresseemail2')); ?>:</b>
-	<?php echo CHtml::encode($data->adresseemail2); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('telephone1')); ?>:</b>
 	<?php echo CHtml::encode($data->telephone1); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('telephone2')); ?>:</b>
-	<?php echo CHtml::encode($data->telephone2); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('telephone3')); ?>:</b>
-	<?php echo CHtml::encode($data->telephone3); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('datenaissance')); ?>:</b>
-	<?php echo CHtml::encode($data->datenaissance); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('adresse')); ?>:</b>
@@ -54,11 +38,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('package')); ?>:</b>
-	<?php echo CHtml::encode($data->package); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('photo')); ?>:</b>
-	<?php echo CHtml::encode($data->photo); ?>
+	<?php echo CHtml::encode($data->packages->nom); ?>
 	<br />
 
 </div>

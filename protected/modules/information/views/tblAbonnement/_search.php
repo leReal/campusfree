@@ -12,11 +12,6 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'matricule'); ?>
 		<?php echo $form->textField($model,'matricule',array('size'=>15,'maxlength'=>15)); ?>
 	</div>
@@ -39,11 +34,7 @@
 		<?php echo $form->textField($model,'adresseemail1',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'telephone1'); ?>
-		<?php echo $form->textField($model,'telephone1',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
-
+	
 	<div class="row">
 		<?php echo $form->label($model,'adresse'); ?>
 		<?php echo $form->textField($model,'adresse',array('size'=>50,'maxlength'=>50)); ?>
@@ -51,7 +42,8 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'package'); ?>
-		<?php echo $form->textField($model,'package',array('size'=>50,'maxlength'=>50)); ?>
+            <?php echo $form->dropDownList($model,'package',CHtml::listData(TblPackage::model()->findAll(),'id', 'nom'),
+                        array('empty' => "Sélectionnez un package")); ?>	
 	</div>
 
 	<div class="row buttons">

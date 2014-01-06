@@ -21,11 +21,6 @@
 		<?php echo $form->textField($model,'nom',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'id_etablissement'); ?>
-		<?php echo $form->textField($model,'id_etablissement'); ?>
-	</div>
-    
         <div class="row">
 		<?php echo $form->labelEx($model,'id_etablissement'); ?>
                 <?php echo $form->dropDownList($model,'id_etablissement',CHtml::listData(TblEtablissement::model()->findAll(),'id', 'nom'),

@@ -39,11 +39,6 @@
 		<?php echo $form->error($model,'telephone2'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'telephone3'); ?>
-		<?php echo $form->textField($model,'telephone3',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'telephone3'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'boitepostale'); ?>

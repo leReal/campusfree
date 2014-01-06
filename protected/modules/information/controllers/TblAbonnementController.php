@@ -64,6 +64,8 @@ class TblAbonnementController extends RController
 	 */
 	public function actionCreate()
 	{
+                Yii::import('ext.yii-mail.YiiMailMessage');
+                Yii::import('ext.sms.SendSMS');
 		$model=new TblAbonnement;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -72,8 +74,25 @@ class TblAbonnementController extends RController
 		if(isset($_POST['TblAbonnement']))
 		{
 			$model->attributes=$_POST['TblAbonnement'];
-			if($model->save())
+			if($model->save()){
+                            //envoie d'un email l'abonné pour confirmation de son inscription
+                            $message= new YiiMailMessage;
+                            $message->subject    = "Inscription à Campus Free";
+                            $contenu='Bonjour '.$model->nom.' '.$model->prenom.'. Vous venez de vous abonner au site Campus Free. 
+                                Désormais vous recevrez toutes les informations concernant votre classe ('.                                 
+                                 $model->classe->nom.') à l"adresse '.$model->adresseemail1.' Merci de votre confiance.';
+                            $message->setBody($contenu, 'text/html');
+                            $message->addTo($model->adresseemail1);
+                            $message->from = Yii::app()->params['adminEmail'];
+                            Yii::app()->mail->send($message);
+
+                            //Envoie d'un sms de confirmation de l'abonnement à l'abonné
+                            $sms=new SendSMS;
+                            $numero=array('237'.$model->telephone1);
+                            $sms->envoiopt2($numero, $contenu);
+                            
 				$this->redirect(array('view','id'=>$model->id));
+                        }        
 		}
 
 		$this->render('create',array(
@@ -124,9 +143,13 @@ class TblAbonnementController extends RController
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('TblAbonnement');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+		$model=new TblAbonnement('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['TblAbonnement']))
+			$model->attributes=$_GET['TblAbonnement'];
+
+		$this->render('admin',array(
+			'model'=>$model,
 		));
 	}
 

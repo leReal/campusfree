@@ -41,13 +41,12 @@ $('.search-form form').submit(function(){
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'titresms',
-		'contenusms',
 		'titremail',
 		'contenumail',
-		'id_informateur',
-		'etablissement_id',
-		array(
+                 array(  
+                 'name'=>'id_informateur',
+                 'value'=>'$data->informateur->username',
+                 ),		array(
 			'class'=>'CButtonColumn',
 		),
 	),

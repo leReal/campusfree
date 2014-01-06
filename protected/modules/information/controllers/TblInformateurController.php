@@ -52,8 +52,19 @@ class TblInformateurController extends RController
 	 */
 	public function actionView($id)
 	{
+		$model2 = new InformateurClasse;
+
+            $model2->setAttribute('id_utilisateur', $id);
+            $criteria=new CDbCriteria;
+
+            $criteria->compare('id_utilisateur',$id);
+
+            $dataProvider = new CActiveDataProvider($model2, array(
+			'criteria'=>$criteria,
+		));
+            // ************  Fin de la construction ***************
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$this->loadModel($id),'model2'=>$model2,'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -63,18 +74,24 @@ class TblInformateurController extends RController
 	 */
 	public function actionCreate()
 	{
-		$model=new TblUtilisateur;
-                // mise à jour du type d'utilisateur: Informateur=1
+		$model=new User;
                 $model->type=1;
-
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['TblUtilisateur']))
+		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['TblUtilisateur'];
-			if($model->save())
+			$model->attributes=$_POST['User'];
+			if($model->save()){
+                            foreach ($_POST['User']['classes'] as &$value){
+                                $clas=new InformateurClasse;
+                                $clas->id_classe=$value;
+                                $clas->id_utilisateur=$model->id;
+                                $clas->save();
+                            
+                        }
 				$this->redirect(array('view','id'=>$model->id));
+                        }          
 		}
 
 		$this->render('create',array(
@@ -94,9 +111,9 @@ class TblInformateurController extends RController
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['TblUtilisateur']))
+		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['TblUtilisateur'];
+			$model->attributes=$_POST['User'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -125,7 +142,15 @@ class TblInformateurController extends RController
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('TblUtilisateur');
+		//filtrons le dataProvider pour qu'il ne donne que les utilisateurs informateurs
+		$dataProvider=new CActiveDataProvider('User',array(
+                'criteria'=>array(
+                'condition'=>'type=1',
+                ),
+                'pagination'=>array(
+                    'pageSize'=>20,
+                ),
+            ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -136,10 +161,11 @@ class TblInformateurController extends RController
 	 */
 	public function actionAdmin()
 	{
-		$model=new TblUtilisateur('search');
+		$model=new User('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['TblUtilisateur']))
-			$model->attributes=$_GET['TblUtilisateur'];
+                $model->type=1;
+		if(isset($_GET['User']))
+			$model->attributes=$_GET['User'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -150,12 +176,12 @@ class TblInformateurController extends RController
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return TblUtilisateur the loaded model
+	 * @return User the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=TblUtilisateur::model()->findByPk($id);
+		$model=User::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -163,11 +189,11 @@ class TblInformateurController extends RController
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param TblUtilisateur $model the model to be validated
+	 * @param User $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='tbl-utilisateur-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='user-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

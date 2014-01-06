@@ -22,6 +22,24 @@
 		<?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
+        
+        <div class="row">
+	<?php echo $form->labelEx($model,'verifyPassword'); ?>
+	<?php echo $form->passwordField($model,'verifyPassword'); ?>
+	<?php echo $form->error($model,'verifyPassword'); ?>
+	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'nom'); ?>
+		<?php echo $form->textField($model,'nom',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->error($model,'nom'); ?>
+	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'prenom'); ?>
+		<?php echo $form->textField($model,'prenom',array('size'=>40,'maxlength'=>40)); ?>
+		<?php echo $form->error($model,'prenom'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'email'); ?>
@@ -40,6 +58,13 @@
 		<?php echo $form->dropDownList($model,'status',User::itemAlias('UserStatus')); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'type'); ?>
+		<?php echo $form->dropDownList($model,'type',User::itemAlias('UserTypes')); ?>
+		<?php echo $form->error($model,'type'); ?>
+	</div>
+        
 <?php 
 		$profileFields=$profile->getFields();
 		if ($profileFields) {

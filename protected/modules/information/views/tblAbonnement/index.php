@@ -1,20 +1,20 @@
 <?php
 /* @var $this TblAbonnementController */
-/* @var $dataProvider CActiveDataProvider */
+/* @var @var $model TblAbonnement */
 
 $this->breadcrumbs=array(
-	'Tbl Abonnements',
+	'Abonnements',
 );
 
 $this->menu=array(
 	array('label'=>'Créer un abonnement', 'url'=>array('create')),
-	array('label'=>'Gérer les abonnement', 'url'=>array('admin')),
+	array('label'=>'Gérer les abonnements', 'url'=>array('admin')),
 );
 ?>
 
 <h1>Gestion des abonnements</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+<?php $this->render('admin',array(
+			'model'=>$model,
+		));
+?>

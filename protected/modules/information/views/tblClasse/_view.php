@@ -14,7 +14,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_filiere')); ?>:</b>
-	<?php echo CHtml::encode($data->id_filiere); ?>
+	<?php echo CHtml::encode($data->eFILIERE->nom); ?>
 	<br />
 
 

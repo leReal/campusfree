@@ -1,6 +1,6 @@
 <?php
 /* @var $this TblInformateurController */
-/* @var $model TblUtilisateur */
+/* @var $model User */
 
 $this->breadcrumbs=array(
 	'Informateurs'=>array('index'),
@@ -18,7 +18,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#tbl-utilisateur-grid').yiiGridView('update', {
+	$('#user-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -36,16 +36,25 @@ $('.search-form form').submit(function(){
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'tbl-utilisateur-grid',
+	'id'=>'user-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'login',
+		'id',
+		'username',
 		'nom',
-		'prenom',
-		'adresseemail1',
-		'telephone1',
-		'type',
+		'email',
+		'create_at',
+		'lastvisit_at',
+                array(  
+                 'name'=>'type',
+                 'value'=>'$data->type0->nom',
+                 ),		/*
+		'telephone',
+		'activkey',
+		'superuser',
+		'status',
+		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

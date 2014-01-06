@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Créer une institution', 'url'=>array('create')),
-	array('label'=>'Gérer une institution', 'url'=>array('admin')),
+	array('label'=>'Gérer les institutions', 'url'=>array('admin')),
 );
 ?>
 

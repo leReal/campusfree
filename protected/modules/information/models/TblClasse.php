@@ -53,7 +53,7 @@ class TblClasse extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                'eFILIERE' => array(self::BELONGS_TO, 'tbl_filiere', 'id_filiere'),
+                'eFILIERE' => array(self::BELONGS_TO, 'TblFiliere', 'id_filiere'),
 		);
 	}
 

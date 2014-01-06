@@ -61,7 +61,7 @@ class TblEtablissement extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                'iNSTITUTION' => array(self::BELONGS_TO, 'tbl_institution', 'id_institution'),
+                'iNSTITUTION' => array(self::BELONGS_TO, 'TblInstitution', 'id_institution'),
 		);
 	}
 

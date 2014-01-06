@@ -125,62 +125,97 @@ class TblInformationController extends RController
 	 */
 	public function actionCreate()
 	{
-             Yii::import('ext.yii-mail.YiiMailMessage');
+                Yii::import('ext.yii-mail.YiiMailMessage');
+                Yii::import('ext.sms.SendSMS');
 		$model=new TblInformation;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-            
+            /* Algorithme d'envoie d'information
+             * 1. Récupérer l'informateur connecté
+             * 2. Récupérer l'ensemble des classes dans lesquelles il a les droits d'informer
+             *      Pour chaque classe
+             *      2.1 recupérer tous les abonnés de la classe
+             *          si package=gold alors inserer son @mail dans la liste des adresses à envoyer et son numéro 
+             *                                dans la liste des numéros
+             *          sinon inserer son adresse email dans la liste des adresses email à envoyer         
+             *  Ici on a la liste des @ mail a qui envoyer l'infoemation et la liste des numéro à envoyer le message
+             * 3. envoie du mail à toutes les adresses de la liste des @ recupérées
+             * 4. envoie du message à tous les numéros de la liste des numéros recupérés        
+             * Si possible lancer les deux envois dans les processus différents pour optimisation
+             */
 
 		if(isset($_POST['TblInformation']))
 		{
                     $model->attributes=$_POST['TblInformation'];
 
-                        $user = $this->getUser();
-                        if(!$this->estInformateur()){
-
-                            echo "<br>Vous n'etes pas un informateur";
-                            $this->render('create',array(
-                                'model'=>$model,
-                            ));
+                    // 1. Recupération de l'informateur connecté
+                        $userId = Yii::app()->user->getId();
+                        //mettons à jour l'id_informateur
+                        $model->id_informateur=$userId;                        
+                     //verifions si l'utilisateur connecté est un informateur
+                     
+                    // 2. Récupérer l'ensemble des classes dans lesquelles il a les droits d'informer
+                    $criteria=new CDbCriteria;
+                    $criteria->addCondition('id_utilisateur='.$userId);
+                    $classe=InformateurClasse::model()->findAll($criteria);
+                    
+                    //Construction du tableau qui va récupérer la liste des classes
+                    $listClasse=array();
+                    $i=0;
+                    foreach($classe as $element)
+                        {
+                        $listClasse[$i]=$element->idClasse->id;
+                        $i=$i+1;
                         }
-                        $model->setAttribute("id_informateur", $user->getAttribute("id"));
+                    
+                    //2.1 recupération de la liste des abonnés appartenant à l'ensemble des classes de l'informateur
+                    $criteria1=new CDbCriteria;  
+                    $criteria1->addInCondition("classe_id", $listClasse);
+                    $abonnes = TblAbonnement::model()->findAll($criteria1);
+                    
+                    $adresseMail=array();
+                    $numero=array();
+                    $j=0;$k=0;
+                    
+                    //construction de la liste des adresses email et des numéro de téléphone
+                    foreach ($abonnes as $value) {
+                       //si l'abonné est GOLD alors mettre son numéro dans la liste des numéro 
+                       if($value->packages->id==2){
+                           $numero[$j]='237'.$value->telephone1;
+                           $j=$j+1;
+                       }
+                       //Par défaut tous les abonnés ont droit à l'information par mail
+                       $adresseMail[$k]=$value->adresseemail1;
+                       $k=$k+1;                           
+                    }
+                    //Envoie de l'information par mail
+                    
                         $message= new YiiMailMessage;
 
-                        $message->subject    = $model->titremail;
-                        $message->setBody($model->contenumail, 'text/html');
-
-                        echo 'commencons';
-                        foreach ($this->sendGetMails() as $value){
-                             $message->addTo($value);
-                             Yii::trace(get_class($this).'.create()','Mail : '.$value);
-                             echo '<br> email : '.$value;
-                        }
-                        $message->addTo("elvis.tchikapa@gmail.com");
-                        $message->addTo("rostowgokeng@gmail.com");
-                        $message->addTo("elvistchikapa@yahoo.com");
                         $message->from = Yii::app()->params['adminEmail'];
-
-                        Yii::trace(get_class($this).'.create()','Message chargé');
+                        $message->subject= $model->titremail;
+                        $message->setBody($model->contenumail, 'text/html');
+                        foreach ($adresseMail as $value) {
+                            $message->addTo($value);
+                        }
+                        
                         /**
                          * Parcourir l'ensemble des fichier uplodés et les attacher ds le message
                          */
-                        Yii::trace(get_class($this).'.create()','Message chargé '.$this->getNb_fichier_a_upload());
                         for ($index = 0; $index < $this->getNb_fichier_a_upload(); $index++) {
-
                             $swiftAttachment = Swift_Attachment::fromPath($this->getFichier($index)); // create a Swift Attachment
                             $message->attach($swiftAttachment); // now attach the correct type
-
                         }
 
-                        Yii::trace(get_class($this).'.create()','Avant envoie ....');
-
                         Yii::app()->mail->send($message);
+                        
+                        // envoie de l'information par sms
+                        $sms=new SendSMS;
+                        $sms->envoiopt1($numero, $model->titremail);
 
-                        Yii::trace(get_class($this).'.create()','Message envoyé avec succès.....'.$this->getNb_fichier_a_upload());
-
-
+                        
                         if($model->save()){
                             /**
                              * Enregistrement des pieces jointes
@@ -198,9 +233,6 @@ class TblInformationController extends RController
                             $this->initialise_var_fichier();
                             $this->redirect(array('view','id'=>$model->id));
                         }
-
-                        
-
 		}
 
 		$this->render('create',array(
@@ -315,7 +347,7 @@ class TblInformationController extends RController
 {
         Yii::import("ext.EAjaxUpload.qqFileUploader");
 
-        $path = Yii::app()->basePath . '\\..\\uploads\\';
+        $path = Yii::app()->basePath . '/../uploads/';
         if (!is_dir($path)) {
             mkdir($path);
         }

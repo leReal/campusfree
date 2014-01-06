@@ -1,6 +1,6 @@
 <?php
-/* @var $this TblInformateurController */
-/* @var $model TblUtilisateur */
+/* @var $this TblRepresentantController */
+/* @var $model User */
 
 $this->breadcrumbs=array(
 	'Représentants'=>array('index'),

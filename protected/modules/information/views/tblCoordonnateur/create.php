@@ -1,6 +1,6 @@
 <?php
-/* @var $this TblInformateurController */
-/* @var $model TblUtilisateur */
+/* @var $this TblCoordonnateurController */
+/* @var $model User */
 
 $this->breadcrumbs=array(
 	'Coordonnateurs'=>array('index'),
@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Liste des Coordonnateurs', 'url'=>array('index')),
-	array('label'=>'Gérer les Coordonnateurs', 'url'=>array('admin')),
+	array('label'=>'Liste des coordonnateurs', 'url'=>array('index')),
+	array('label'=>'Gérer les coordonnateurs', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Création d'un coordonnateur</h1>
+<h1>Création des coordonnateurs</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

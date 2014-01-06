@@ -1,5 +1,5 @@
 <?php
-/* @var $this TblInformateurController */
+/* @var $this TblCoordonnateurController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Créer un Coordonnateur', 'url'=>array('create')),
-	array('label'=>'Gérer les Coordonnateurs', 'url'=>array('admin')),
+	array('label'=>'Créer un coordonnateur', 'url'=>array('create')),
+	array('label'=>'Gérer les coordonnateurs', 'url'=>array('admin')),
 );
 ?>
 

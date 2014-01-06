@@ -11,6 +11,8 @@ return array(
 
 	// preloading 'log' component
 	'preload'=>array('log'),
+    
+       'language'=>'fr',
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -19,12 +21,16 @@ return array(
                 'application.extensions.EAjaxUpload.*',
                 'application.modules.rights.*',
                 'application.modules.rights.components.*',
+                'application.modules.user.models.*',
+                'application.modules.user.components.*',
+                'application.modules.information.models.*',
                 'application.extensions.bootsrap.*',
+
 	),
   
 	'modules'=>array(
-		// uncomment the following to enable the Gii tool
 		
+                // uncomment the following to enable the Gii tool
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'campusfree',
@@ -32,34 +38,75 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
                 'information',
+            
+                'user'=>array(
+                        'tableUsers' => 'users',
+                        'tableProfiles' => 'profiles',
+                        'tableProfileFields' => 'profiles_fields',
+                             # encrypting method (php hash function)
+                        'hash' => 'md5',
+
+                        # send activation email
+                        'sendActivationMail' => false,
+
+                        # allow access for non-activated users
+                        'loginNotActiv' => true,
+
+                        # activate user on registration (only sendActivationMail = false)
+                        'activeAfterRegister' => false,
+
+                        # automatically login from registration
+                        'autoLogin' => true,
+
+                        # registration path
+                        'registrationUrl' => array('/user/registration'),
+
+                        # recovery password path
+                        'recoveryUrl' => array('/user/recovery'),
+
+                        # login form path
+                        'loginUrl' => array('/user/login'),
+
+                        # page after login
+                        'returnUrl' => array('/user/profile'),
+
+                        # page after logout
+                        'returnLogoutUrl' => array('/user/login'),
+        ),
+            
                 'rights'=>array(
-                    'superuserName'=>'admin',      // Name of the role with super user privileges.
-                    'authenticatedName'=>'Authenticated',    // Name of the authenticated user role.
-                    'userClass'=>'TblUtilisateur',
-                    'userIdColumn'=>'id',       // Name of the user id column in the database.
-                    'userNameColumn'=>'login',     // Name of the user name column in the database.
-                    'enableBizRule'=>true,       // Whether to enable authorization item business rules.
-                    'enableBizRuleData'=>false,       // Whether to enable data for business rules.
-                    'displayDescription'=>true,      // Whether to use item description instead of name.
-                    'flashSuccessKey'=>'RightsSuccess',    // Key to use for setting success flash messages.
-                    'flashErrorKey'=>'RightsError',    // Key to use for setting error flash messages.
-                    'install'=>true,        // Whether to install rights.
-                    'baseUrl'=>'/rights',      // Base URL for Rights. Change if module is nested.
-                    'layout'=>'rights.views.layouts.main',    // Layout to use for displaying Rights.
-                    'appLayout'=>'application.views.layouts.main',  // Application layout.
-                    'cssFile'=>'rights.css',      // Style sheet file to use for Rights.
-                    'install'=>false,        // Whether to enable installer.
-                    'debug'=>false,        // Whether to enable debug mode.
-                    ),		
+                        'superuserName'=>'Admin', // Name of the role with super user privileges. 
+                        'authenticatedName'=>'Authenticated',  // Name of the authenticated user role. 
+                        'userIdColumn'=>'id', // Name of the user id column in the database. 
+                        'userNameColumn'=>'username',  // Name of the user name column in the database. 
+                        'enableBizRule'=>true,  // Whether to enable authorization item business rules. 
+                        'enableBizRuleData'=>true,   // Whether to enable data for business rules. 
+                        'displayDescription'=>true,  // Whether to use item description instead of name. 
+                        'flashSuccessKey'=>'RightsSuccess', // Key to use for setting success flash messages. 
+                        'flashErrorKey'=>'RightsError', // Key to use for setting error flash messages. 
+
+                        'baseUrl'=>'/rights', // Base URL for Rights. Change if module is nested. 
+                        'layout'=>'rights.views.layouts.main',  // Layout to use for displaying Rights. 
+                        'appLayout'=>'application.views.layouts.main', // Application layout. 
+                        'cssFile'=>'rights.css', // Style sheet file to use for Rights. 
+                        'install'=>false,  // Whether to enable installer. 
+                        'debug'=>false, 
+        ),		
 	),
 
 	// application components
 	'components'=>array(
 		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-                        'class'=>'RWebUser',      // Allows super users access implicitly.
-		),
+                    'class'=>'RWebUser',
+                    // enable cookie-based authentication
+                    'allowAutoLogin'=>true,
+                    'loginUrl'=>array('/user/login'),
+                ),
+               'authManager'=>array(
+                    'class'=>'RDbAuthManager',
+                    'connectionID'=>'db',
+                    'defaultRoles'=>array('Authenticated', 'Guest'),
+                ),
                 'bootstrap'=>array(
                             'class'=>'bootstrap.components.Bootstrap',
                 ),
@@ -72,7 +119,10 @@ return array(
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
+
+
 //                        'class'=>'RDbAuthManager',
+
 		),
 		
 //		'db'=>array(
@@ -113,7 +163,7 @@ return array(
                 'transportType'=>'smtp',
                 'transportOptions'=>array(
                 'host'=>'smtp.gmail.com',
-                'username'=>'campusfrees@gmail.com',//adresse dédié à campus free
+                'username'=>'campusfrees@gmail.com',//adresse dédiée à campus free
                 'password'=>'ismaelmoon',
                 'port'=>'465',
                 'encryption'=>'ssl',

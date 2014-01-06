@@ -25,10 +25,6 @@
 	<?php echo CHtml::encode($data->telephone2); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('telephone3')); ?>:</b>
-	<?php echo CHtml::encode($data->telephone3); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('boitepostale')); ?>:</b>
 	<?php echo CHtml::encode($data->boitepostale); ?>
 	<br />
@@ -38,7 +34,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_institution')); ?>:</b>
-	<?php echo CHtml::encode($data->id_institution); ?>
+	<?php echo CHtml::encode($data->iNSTITUTION->nom); ?>
 	<br />	
 
 </div>

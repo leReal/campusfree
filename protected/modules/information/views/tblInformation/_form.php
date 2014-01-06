@@ -36,7 +36,7 @@
 array(
         'id'=>'uploadFile',
         'config'=>array(
-               'action'=>Yii::app()->createUrl('information/tblInformation/upload'),
+               'action'=>Yii::app()->createUrl('information/TblInformation/Upload'),
 //               'action'=>'index.php?r=message/upload',
                'allowedExtensions'=>array("jpg","jpeg","gif","exe","mov","mp4","txt","doc","pdf","xls","xlsx", "docx","3gp","php","ini","avi","rar","zip","png"),//array("jpg","jpeg","gif","exe","mov" and etc...
                'sizeLimit'=>100*1024*1024,// maximum file size in bytes

@@ -1,6 +1,6 @@
 <?php
-/* @var $this TblInformateurController */
-/* @var $model TblUtilisateur */
+/* @var $this TblCoordonnateurController */
+/* @var $model User */
 
 $this->breadcrumbs=array(
 	'Coordonnateurs'=>array('index'),
@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Liste des Coordonnateurs', 'url'=>array('index')),
-	array('label'=>'Créer un Coordonnateur', 'url'=>array('create')),
+	array('label'=>'Liste des coordonnateurs', 'url'=>array('index')),
+	array('label'=>'Créer un coordonnateur', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -18,7 +18,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#tbl-utilisateur-grid').yiiGridView('update', {
+	$('#user-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Gestion des Coordonnateurs</h1>
+<h1>gestion des coordonnateurs</h1>
 
 <?php echo CHtml::link('Recherche avancée','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -36,16 +36,23 @@ $('.search-form form').submit(function(){
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'tbl-utilisateur-grid',
+	'id'=>'user-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'login',
+		'id',
+		'username',
 		'nom',
-		'prenom',
-		'adresseemail1',
-		'telephone1',
+		'email',
+		'create_at',
+		'lastvisit_at',
+		/*
+		'telephone',
+		'activkey',
+		'superuser',
+		'status',
 		'type',
+		*/
 		array(
 			'class'=>'CButtonColumn',
 		),
